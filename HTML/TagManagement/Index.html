@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sử dụng các tag cơ bản</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        
+        
+        $(document).ready(function(){
+            $("#head-edit").click(function(){           
+                $("#head-textbox").attr("readonly", false); 
+            });
+            $("#body-edit").click(function(){           
+                $("#body-textbox").attr("readonly", false); 
+            });
+            $("#head-pause").click(function(){           
+                $("#head-textbox").attr("readonly", true); 
+            });
+            $("#body-pause").click(function(){           
+                $("#body-textbox").attr("readonly", true); 
+            });
+        });
+</script>
+</head>
+
+<body style="padding: 20px">
+    <h2 id="body-h2">Tag managemnent</h2>
+    <div class="container">
+        <div class="row">
+            <div >
+                    <div>
+                            <p>HEAD</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <textarea id="head-textbox" readonly> </textarea>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <button id="#head-edit">Edit</button>
+                                        <button id="#head-pause">Pause</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div>
+                            <p>BODY</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-11">
+                                        <textarea id="body-textbox" readonly></textarea>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <button id="#body-edit">Edit</button>
+                                        <button id="#body-pause">Pause</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

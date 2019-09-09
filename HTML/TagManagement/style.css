@@ -1,0 +1,39 @@
+
+
+#body-h2 {
+    text-align: center;
+	color: #FF3399
+}
+
+#head-textbox{
+    height: 10em;
+    width: 50em;
+    border-radius: 8px;
+}
+
+#body-textbox{
+    height: 10em;
+    width: 50em;
+    border-radius: 2px;
+}
+
+#head-edit{
+    border-radius: 4px;
+}
+
+#body-edit{
+    border-radius: 4px;
+}
+
+#head-pause{
+    border-radius: 4px;
+}
+
+#body-pause{
+    border-radius: 4px;
+}
+
+
+
+			
+			
