@@ -11,12 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     <script>
 
         /// EDIT EVENT
         // This is event for Edit button of Tag Info in <head>
         $(document).ready(function(){
-            $('#head-edit').click(function(){           
+            $('#head-edit').click(function(){       
                 jQuery("#head-textbox").removeAttr("disabled");
                 jQuery("#head-edit").prop("hidden", true);
                 jQuery("#head-pause").removeAttr("hidden");
@@ -38,43 +40,91 @@
         // This is event for Pause button of Tag Info in <head>
         $(document).ready(function(){
             $("#head-pause").click(function () {    
-                jQuery("#head-textbox").prop("disabled", true);
-                jQuery("#head-edit").removeAttr("hidden");
-                jQuery("#body-edit").removeAttr("disabled");
-                jQuery("#head-pause").prop("hidden", true);
-                jQuery("#head-save").prop("hidden", true);
+                // display Dialog Confirm Save
+                $.confirm({
+                    title: 'Pause',
+                    content: 'Do you want to stop saving Head Information!',
+                    buttons: {
+                        yes: function () {
+                            jQuery("#head-textbox").prop("disabled", true);
+                            jQuery("#head-edit").removeAttr("hidden");
+                            jQuery("#body-edit").removeAttr("disabled");
+                            jQuery("#head-pause").prop("hidden", true);
+                            jQuery("#head-save").prop("hidden", true);
+                        },
+                        no: function () {
+                        }                      
+                    }
+                });  
+               
             });
         });
         // This is event for Pause button of Tag Info in <body>
         $(document).ready(function(){
             $("#body-pause").click(function () {     
-                jQuery("#body-textbox").prop("disabled", true);
-                jQuery("#body-edit").removeAttr("hidden");
-                jQuery("#head-edit").removeAttr("disabled");
-                jQuery("#body-pause").prop("hidden", true);
-                jQuery("#body-save").prop("hidden", true);
+                 // display Dialog Confirm Save
+                 $.confirm({
+                    title: 'Pause',
+                    content: 'Do you want to stop saving Body Information!',
+                    buttons: {
+                        yes: function () {
+                            jQuery("#body-textbox").prop("disabled", true);
+                            jQuery("#body-edit").removeAttr("hidden");
+                            jQuery("#head-edit").removeAttr("disabled");
+                            jQuery("#body-pause").prop("hidden", true);
+                            jQuery("#body-save").prop("hidden", true);
+                        },
+                        no: function () {
+                        }                      
+                    }
+                });  
+                
             });
         });
 
         /// SAVE EVENT
          // This is event for Save button of Tag Info in <head>
         $(document).ready(function(){
-            $("#head-save").click(function () {    
-                jQuery("#head-textbox").prop("disabled", true);
-                jQuery("#head-edit").removeAttr("hidden");
-                jQuery("#body-edit").removeAttr("disabled");
-                jQuery("#head-pause").prop("hidden", true);
-                jQuery("#head-save").prop("hidden", true);
+            $("#head-save").click(function () { 
+                // display Dialog Confirm Save
+                $.confirm({
+                    title: 'Save',
+                    content: 'Do you want to save Head Information!',
+                    buttons: {
+                        yes: function () {
+                            jQuery("#head-textbox").prop("disabled", true);
+                            jQuery("#head-edit").removeAttr("hidden");
+                            jQuery("#body-edit").removeAttr("disabled");
+                            jQuery("#head-pause").prop("hidden", true);
+                            jQuery("#head-save").prop("hidden", true);
+                        },
+                        no: function () {
+                        }                      
+                    }
+                });   
+                
             });
         });
         // This is event for Pause button of Tag Info in <body>
         $(document).ready(function(){
-            $("#body-save").click(function () {     
-                jQuery("#body-textbox").prop("disabled", true);
-                jQuery("#body-edit").removeAttr("hidden");
-                jQuery("#head-edit").removeAttr("disabled");
-                jQuery("#body-pause").prop("hidden", true);
-                jQuery("#body-save").prop("hidden", true);
+            $("#body-save").click(function () {  
+                // display Dialog Confirm Save
+                $.confirm({
+                    title: 'Save',
+                    content: 'Do you want to save Body Information!',
+                    buttons: {
+                        yes: function () {
+                            jQuery("#body-textbox").prop("disabled", true);
+                            jQuery("#body-edit").removeAttr("hidden");
+                            jQuery("#head-edit").removeAttr("disabled");
+                            jQuery("#body-pause").prop("hidden", true);
+                            jQuery("#body-save").prop("hidden", true);
+                        },
+                        no: function () {
+                        }                      
+                    }
+                });  
+                
             });
         });
 </script>
