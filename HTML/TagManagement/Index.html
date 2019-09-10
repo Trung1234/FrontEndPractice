@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,27 +12,76 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        
-        
+
+        /// EDIT EVENT
+        // This is event for Edit button of Tag Info in <head>
         $(document).ready(function(){
-            $("#head-edit").click(function(){           
-                $("#head-textbox").attr("readonly", false); 
+            $('#head-edit').click(function(){           
+                jQuery("#head-textbox").removeAttr("disabled");
+                jQuery("#head-edit").prop("hidden", true);
+                jQuery("#head-pause").removeAttr("hidden");
+                jQuery("#head-save").removeAttr("hidden");
+                jQuery("#body-edit").prop("disabled", true);
+            });                    
+        });
+        // This is event for Edit button of Tag Info in <body>
+        $(document).ready(function(){
+            $("#body-edit").click(function () {
+                jQuery("#body-textbox").removeAttr("disabled");
+                jQuery("#body-edit").prop("hidden", true);
+                jQuery("#body-pause").removeAttr("hidden");
+                jQuery("#body-save").removeAttr("hidden");
+                jQuery("#head-edit").prop("disabled", true);
             });
-            $("#body-edit").click(function(){           
-                $("#body-textbox").attr("readonly", false); 
+        });
+        /// PAUSE EVENT
+        // This is event for Pause button of Tag Info in <head>
+        $(document).ready(function(){
+            $("#head-pause").click(function () {    
+                jQuery("#head-textbox").prop("disabled", true);
+                jQuery("#head-edit").removeAttr("hidden");
+                jQuery("#body-edit").removeAttr("disabled");
+                jQuery("#head-pause").prop("hidden", true);
+                jQuery("#head-save").prop("hidden", true);
             });
-            $("#head-pause").click(function(){           
-                $("#head-textbox").attr("readonly", true); 
+        });
+        // This is event for Pause button of Tag Info in <body>
+        $(document).ready(function(){
+            $("#body-pause").click(function () {     
+                jQuery("#body-textbox").prop("disabled", true);
+                jQuery("#body-edit").removeAttr("hidden");
+                jQuery("#head-edit").removeAttr("disabled");
+                jQuery("#body-pause").prop("hidden", true);
+                jQuery("#body-save").prop("hidden", true);
             });
-            $("#body-pause").click(function(){           
-                $("#body-textbox").attr("readonly", true); 
+        });
+
+        /// SAVE EVENT
+         // This is event for Save button of Tag Info in <head>
+        $(document).ready(function(){
+            $("#head-save").click(function () {    
+                jQuery("#head-textbox").prop("disabled", true);
+                jQuery("#head-edit").removeAttr("hidden");
+                jQuery("#body-edit").removeAttr("disabled");
+                jQuery("#head-pause").prop("hidden", true);
+                jQuery("#head-save").prop("hidden", true);
+            });
+        });
+        // This is event for Pause button of Tag Info in <body>
+        $(document).ready(function(){
+            $("#body-save").click(function () {     
+                jQuery("#body-textbox").prop("disabled", true);
+                jQuery("#body-edit").removeAttr("hidden");
+                jQuery("#head-edit").removeAttr("disabled");
+                jQuery("#body-pause").prop("hidden", true);
+                jQuery("#body-save").prop("hidden", true);
             });
         });
 </script>
 </head>
 
 <body style="padding: 20px">
-    <h2 id="body-h2">Tag managemnent</h2>
+    <h2 id="body-h2">Tag management</h2>
     <div class="container">
         <div class="row">
             <div >
@@ -41,11 +90,12 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-11">
-                                        <textarea id="head-textbox" readonly> </textarea>
+                                        <textarea id="head-textbox" disabled> </textarea>
                                     </div>
                                     <div class="col-sm-1">
-                                        <button id="#head-edit">Edit</button>
-                                        <button id="#head-pause">Pause</button>
+                                        <button id="head-edit">Edit</button>
+                                        <button id="head-save" hidden>Save</button>
+                                        <button id="head-pause" hidden>Pause</button>
                                     </div>
                                 </div>
                             </div>
@@ -55,11 +105,12 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-11">
-                                        <textarea id="body-textbox" readonly></textarea>
+                                        <textarea id="body-textbox" disabled></textarea>
                                     </div>
                                     <div class="col-sm-1">
-                                        <button id="#body-edit">Edit</button>
-                                        <button id="#body-pause">Pause</button>
+                                        <button id="body-edit">Edit</button>
+                                        <button id="body-save" hidden>Save</button>
+                                        <button id="body-pause" hidden>Pause</button>
                                     </div>
                                 </div>
                             </div>
