@@ -25,5 +25,33 @@ h3{
 	font-style: italic;
 }
 		
-
+.border1{
+	border-style: solid;
+	border-color: orange;
+}
+.border2{
+	margin: 2px;
+	display: block;
+	color: orange;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+	font-size: 25px;
+	border-color: orange;
+}
+.first-letter{
+	color: rgb(121, 16, 16);
+	font-style: inherit;
+	font-size: 60px;
+}
+.city{
+	color: red;
+	font-weight: bold;
+}
+.shanghai{
+	background-color: yellow;
+	font-style: italic;
+}
 			
