@@ -1,0 +1,50 @@
+.wrap {
+  text-align: center;
+}
+
+.flower {
+  height: 300px;
+  width: 170px;
+  float: left;
+  margin-right: 20px;
+}
+
+.list-flower{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.subject{
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(218, 31, 218);
+  color: white
+}
+
+span.address{
+  margin-left: 10px;
+  font-style: italic;
+}
+
+/* Style the header */
+header {
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(218, 31, 218);
+}
+
+/* Style the footer */
+p.footer {
+  text-align: left;
+  font-size: 15px;
+  background-color: pink
+}
+
+span.copyright{
+  color: blueviolet;
+}
+span.footer{
+  color: blue;
+  text-decoration: underline;
+}
