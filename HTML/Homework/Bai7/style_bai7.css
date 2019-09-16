@@ -27,8 +27,7 @@ span.address{
 }
 
 /* Style the header */
-header {
-  padding: 20px;
+h2 {
   text-align: center;
   font-size: 25px;
   color: rgb(218, 31, 218);
