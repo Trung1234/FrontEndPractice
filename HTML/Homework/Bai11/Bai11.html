@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tạo bảng</title>
+    <link rel="stylesheet" href="style_bai8.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <table  class="border2" border="5">
+        <tr >
+          <th >Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td><input type="password" maxlength="5" id="pass"></td>
+        </tr>
+        <tr>
+          <td colspan="2" >
+            <button id="button" onclick="getInputValue()">OK</button></td>
+        </tr>
+        <tr>
+            <td colspan="2" ><p id="sho"></p></td>
+          </tr>
+      </table>
+      <script>
+        function getInputValue(){
+          var txt = document.getElementById("pass").value;  
+            document.getElementById("sho").innerHTML = txt;  
+     
+        }
+    </script>
+</body>
+
+</html>
