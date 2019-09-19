@@ -71,8 +71,8 @@
             <td colspan="2" >
               <button id="button" onclick="getInputValue()">Đồng ý</button></td>
           </tr>
-          <tr  id="register" hidden>
-              <td colspan="2" ></td>
+          <tr  >
+              <td colspan="2" id="register" hidden></td>
             </tr>
         </table>
    </div>
@@ -82,6 +82,7 @@
           var txt = "Bạn đã đăng ký thành công!!!";  
             document.getElementById("register").innerHTML = txt;  
             document.getElementById("register").removeAttribute("hidden");
+            document.getElementById("register").style.textAlign = "center";
         }
     </script>
 </body>
