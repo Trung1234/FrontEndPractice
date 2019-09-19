@@ -1,0 +1,11 @@
+#input {
+    /*align text for <p>*/
+    text-align: center;
+    font-size: 25px;
+    color: rgb(218, 31, 218);
+  }
+  
+
+ audio.border1{
+  border: 2px solid red; 
+ } 
