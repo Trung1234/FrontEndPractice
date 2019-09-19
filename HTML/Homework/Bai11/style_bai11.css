@@ -1,14 +1,20 @@
-.border1{
-	border-style: solid;
-	border-color: orange;
-}
+table {
+	border-collapse: collapse;
+  }
+  td{
+	  padding: 5px;
+  }
+table, td, th {
+	border: 1px solid rgb(172, 29, 29);
+	background-color: rgb(105, 224, 224);
+  }
 
-.border2{
-	margin: 2px;
-	display: block;
-	color: orange;
+#user{
 	text-align: center;
-	border-style: solid;
-	border-width: thin;
-	border-color: orange;
+	color: blueviolet;
+}
+#title{
+	color: rgb(138, 16, 16);
+	font-size: 20px;
+	margin: 7px;
 }

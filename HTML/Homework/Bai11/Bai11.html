@@ -3,37 +3,43 @@
 
 <head>
     <title>Tạo bảng</title>
-    <link rel="stylesheet" href="style_bai8.css">
+    <link rel="stylesheet" href="style_bai11.css">
     <meta charset="UTF-8">
+    <style>
+      div{
+        width: fit-content;
+      }
+    </style>
 </head>
 
-<body>
-    <table  class="border2" border="5">
-        <tr >
-          <th >Month</th>
-          <th>Savings</th>
-        </tr>
-        <tr>
-          <td>January</td>
-          <td>$100</td>
-        </tr>
-        <tr>
-          <td>February</td>
-          <td><input type="password" maxlength="5" id="pass"></td>
-        </tr>
-        <tr>
-          <td colspan="2" >
-            <button id="button" onclick="getInputValue()">OK</button></td>
-        </tr>
-        <tr>
-            <td colspan="2" ><p id="sho"></p></td>
+<body >
+   <div style="text-align: center;" >
+      <p id="title">Đăng nhập </p>
+      <table style="display: inline-block ;">
+
+          <tr>
+            <td>Mã người dùng: </td>
+            <td><input type="text" maxlength="5" id="name"></td>
           </tr>
-      </table>
+          <tr>
+            <td>Mật khẩu: </td>
+            <td><input type="password" maxlength="5" id="pass"></td>
+          </tr>
+          <tr>
+            <td colspan="2" >
+              <button id="button" onclick="getInputValue()">Đồng ý</button></td>
+          </tr>
+          <tr  id="user" hidden>
+              <td colspan="2" ></td>
+            </tr>
+        </table>
+   </div>
+    
       <script>
         function getInputValue(){
-          var txt = document.getElementById("pass").value;  
-            document.getElementById("sho").innerHTML = txt;  
-     
+          var txt = document.getElementById("name").value;  
+            document.getElementById("user").innerHTML = txt;  
+            document.getElementById("user").removeAttribute("hidden");
         }
     </script>
 </body>
