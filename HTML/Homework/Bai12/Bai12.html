@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tạo bảng</title>
+    <link rel="stylesheet" href="style_bai12.css">
+    <meta charset="UTF-8">
+    <style>
+      div{
+        width: fit-content;
+      }
+    </style>
+</head>
+
+<body >
+   <div style="text-align: center;" >
+      <p id="title">Phiếu đăng kí tham gia chương trình khuyến mãi</p>
+      <table style="display: inline-block ;">
+
+          <tr>
+            <td>Họ và tên </td>
+            <td><input type="text" maxlength="5" id="name"></td>
+          </tr>
+          <tr>
+            <td>Đại chỉ </td>
+            <td><input type="text" maxlength="5" id="name"></td>
+          </tr>
+          <tr>
+            <td>Điện thoại </td>
+            <td><input type="number" maxlength="11" id="pass"></td>
+          </tr>
+          <tr>
+            <td>Phái </td>
+            <td>
+              <form action="">
+                <select name="jobs" >
+                  <option value="doctor">Bác sĩ</option>
+                  <option value="lawyer">Luật sư</option>
+                  <option value="engineer">Kỹ sư</option>
+                </select>              
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Chọn sản phẩm tham gia </td>
+            <td>
+              <form action="">
+                <select name="product" multiple size="4">
+                  <option value="">Kem đánh răng</option>
+                  <option value="">Bột giặt</option>
+                  <option value="">Dầu gội đầu</option>
+                  <option value="">Sữa tắm</option>
+                </select>              
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Nghê nghiệp </td>
+            <td>
+              <form action="">
+                <input type="radio" name="job" value="doctor"> Nam
+                <input type="radio" name="job" value=""> Nữ              
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Số người dự đoán tham gia </td>
+            <td><input type="number" maxlength="10" id="pass"></td>
+          </tr>
+          <tr>
+            <td colspan="2" >
+              <button id="button" onclick="getInputValue()">Đồng ý</button></td>
+          </tr>
+          <tr  id="register" hidden>
+              <td colspan="2" ></td>
+            </tr>
+        </table>
+   </div>
+    
+      <script>
+        function getInputValue(){
+          var txt = "Bạn đã đăng ký thành công!!!";  
+            document.getElementById("register").innerHTML = txt;  
+            document.getElementById("register").removeAttribute("hidden");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+table {
+	border-collapse: collapse;
+  }
+  td{
+	  padding: 5px;
+  }
+table, td, th {
+	border: 1px solid #0B610B;
+	background-color: #58FA58;
+	
+  }
+
+#user{
+	text-align: center;
+	color: pink;
+}
+#title{
+	color: #58FA58;
+	font-size: 20px;
+	margin: 7px;
+}
