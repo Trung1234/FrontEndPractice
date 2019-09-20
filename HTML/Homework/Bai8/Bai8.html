@@ -3,17 +3,94 @@
 
 <head>
     <title>Tạo bảng</title>
-    <link rel="stylesheet" href="style_bai8.css">
     <meta charset="UTF-8">
+    <style>
+        table {
+            width: 80%;
+            border-color: violet;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #FFECCC;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            background-color: rgb(240, 144, 18);
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 40%;
+        }
+
+        article {
+            float: right;
+            width: 60%;
+        }
+
+        h3 {
+            color: orangered;
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    </style>
 </head>
 
-<body>
+<body style="background-color: #FFECCC">
     <section>
-        <h2>Các món ngon Hà Nội</h2>
+
         <nav>
-            <img src="Food.png" alt="Food">
+            <img src="Food.png" alt="Food" width="400px" height="700px">
         </nav>
+        <article>
+            <h3>Các món ngon Hà Nội</h3>
+            <table id="t01">
+                <tr style="text-align: center">
+                    <th>STT</th>
+                    <th>Tên món ăn</th>
+                <tr>
+                    <td>1</td>
+                    <td>Bánh cuốn Thanh Trì</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chả các Lã Vọng</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cháo Cóc</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bánh Gai Ninh Giang</td>
+                </tr>
+            </table>
+        </article>
     </section>
 </body>
 
-</html>>
+</html>

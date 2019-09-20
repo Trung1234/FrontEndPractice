@@ -18,3 +18,6 @@ table, td, th {
 	font-size: 20px;
 	margin: 7px;
 }
+div{
+	display: inline;
+}

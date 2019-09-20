@@ -12,8 +12,8 @@
     </style>
 </head>
 
-<body >
-   <div style="text-align: center;" >
+<body style="text-align: center;" >
+   <div >
       <p id="title">Đăng nhập </p>
       <table style="display: inline-block ;">
 
@@ -29,8 +29,8 @@
             <td colspan="2" >
               <button id="button" onclick="getInputValue()">Đồng ý</button></td>
           </tr>
-          <tr  id="user" hidden>
-              <td colspan="2" ></td>
+          <tr  >
+              <td colspan="2" id="user" hidden></td>
             </tr>
         </table>
    </div>
@@ -40,6 +40,7 @@
           var txt = document.getElementById("name").value;  
             document.getElementById("user").innerHTML = txt;  
             document.getElementById("user").removeAttribute("hidden");
+            document.getElementById("user").style.textAlign = "center";
         }
     </script>
 </body>

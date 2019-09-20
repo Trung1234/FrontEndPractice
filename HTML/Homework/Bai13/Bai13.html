@@ -30,7 +30,7 @@
         <td><input type="number" maxlength="11" id="pass"></td>
       </tr>
       <tr>
-        <td>Tuour </td>
+        <td>Tour </td>
         <td >
           <select >
             <optgroup label="Miền Bắc">
@@ -41,7 +41,11 @@
             <optgroup label="Miền Trung">
               <option value="">Huế- Bạch Mã - Đà Nẵng</option>
               <option value="">Nha  - Chùa Hương - Ninh Bình</option>
-              <option value="">Hà Nội - Cát Bà - Tuần Châu</option>
+              <option value="">Buôn mê thuột - Gia lai - Kontum</option>
+            </optgroup>
+            <optgroup label="Miền Nam">
+              <option value="">TP.HCM- Cần Thơ - Cà Mau</option>
+              <option value="">TP.HCM- Mỹ Tho</option>
             </optgroup>
           </select>
         </td>
@@ -64,7 +68,7 @@
         <td colspan="2">
           <fieldset class="inline">
             <legend >Số lượng đoàn khách</legend>
-            Người lớn<input type="number">
+            Người lớn <input type="number">
               Trẻ em <input type="number" >
 
           </fieldset>
@@ -93,6 +97,7 @@
       document.getElementById("register").innerHTML = txt;
       document.getElementById("register").removeAttribute("hidden");
       document.getElementById("register").style.textAlign = "center";
+      document.getElementById("register").style.color = "orange"
     }
   </script>
 </body>

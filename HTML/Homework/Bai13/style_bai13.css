@@ -7,10 +7,12 @@ table {
 table, td, th {
 	border: 1px solid blue;
 	font-size: 100%;
-	background-color: #B6DD5C ;
+	background-color: #F0DC55;
 	
   }
-
+div{
+	display: inline;
+}
 #user{
 	text-align: center;
 	color: pink;
@@ -26,4 +28,9 @@ fieldset.inline{
 }
 legend{
 	text-align: left;
+	color: orangered;
+}
+textarea {
+    border: none;
+    width: 100%;
 }
