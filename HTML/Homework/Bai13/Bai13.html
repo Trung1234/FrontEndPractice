@@ -12,8 +12,8 @@
   </style>
 </head>
 
-<body>
-  <div style="text-align: center;">
+<body style="text-align: center;">
+  <div >
     <p id="title">Đăng ký du lịch</p>
     <table style="display: inline-block ;">
 
@@ -30,25 +30,42 @@
         <td><input type="number" maxlength="11" id="pass"></td>
       </tr>
       <tr>
+        <td>Tuour </td>
+        <td >
+          <select >
+            <optgroup label="Miền Bắc">
+              <option value="">Hà Nội - Hạ Long - Sapa</option>
+              <option value="">Hà Nội - Chùa Hương - Ninh Bình</option>
+              <option value="">Hà Nội - Cát Bà - Tuần Châu</option>
+            </optgroup>
+            <optgroup label="Miền Trung">
+              <option value="">Huế- Bạch Mã - Đà Nẵng</option>
+              <option value="">Nha  - Chùa Hương - Ninh Bình</option>
+              <option value="">Hà Nội - Cát Bà - Tuần Châu</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <tr>
         <td>Khách Viêt Nam </td>
-        <td><input type="checkbox"></td>
+        <td ><input type="checkbox"></td>
       </tr>
       <tr>
         <td>Phương tiện </td>
         <td>
           <form action="">
-            <input type="radio" name="vehecle" value="sex"> Máy bay
-            <input type="radio" name="vehecle" value="sex"> Xe oto
+            <input type="radio" name="vehicle" value="sex"> Máy bay
+            <input type="radio" name="vehicle" value="sex"> Xe oto
           </form>
         </td>
       </tr>
 
       <tr>
         <td colspan="2">
-          <fieldset>
-            <legend>Số lượng đoàn khách</legend>
-            <p>Người lớn<input type="number" width="10px">
-              Trẻ em <input type="number" width="10px"></p>
+          <fieldset class="inline">
+            <legend >Số lượng đoàn khách</legend>
+            Người lớn<input type="number">
+              Trẻ em <input type="number" >
 
           </fieldset>
         </td>

@@ -1,13 +1,12 @@
 table {
 	border-collapse: collapse;
-	width: 300px;
   }
   td{
 	  padding: 5px;
   }
 table, td, th {
 	border: 1px solid blue;
-	
+	font-size: 100%;
 	background-color: #B6DD5C ;
 	
   }
@@ -20,4 +19,11 @@ table, td, th {
 	color: blue;
 	font-size: 20px;
 	margin: 7px;
+}
+fieldset.inline{
+	border-block-color: red;
+	display: inline;
+}
+legend{
+	text-align: left;
 }
