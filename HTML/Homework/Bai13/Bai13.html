@@ -2,74 +2,82 @@
 <html>
 
 <head>
-    <title>Tạo bảng</title>
-    <link rel="stylesheet" href="style_bai13.css">
-    <meta charset="UTF-8">
-    <style>
-      div{
-        width: fit-content;
-      }
-    </style>
+  <title>Tạo bảng</title>
+  <link rel="stylesheet" href="style_bai13.css">
+  <meta charset="UTF-8">
+  <style>
+    div {
+      width: fit-content;
+    }
+  </style>
 </head>
 
-<body >
-   <div style="text-align: center;" >
-      <p id="title">Phiếu đăng kí tham gia chương trình khuyến mãi</p>
-      <table style="display: inline-block ;">
+<body>
+  <div style="text-align: center;">
+    <p id="title">Đăng ký du lịch</p>
+    <table style="display: inline-block ;">
 
-          <tr>
-            <td>Họ và tên </td>
-            <td><input type="text" maxlength="5" id="name"></td>
-          </tr>
-          <tr>
-            <td>Địa chỉ </td>
-            <td><input type="text" maxlength="5" id="name"></td>
-          </tr>
-          <tr>
-            <td>Điện thoại </td>
-            <td><input type="number" maxlength="11" id="pass"></td>
-          </tr>
-          <tr>
-            <td>Khách Viêt Nam </td>
-            <td><input type="checkbox" ></td>
-          </tr>
-          <tr>
-            <td>Phương tiện </td>
-            <td>
-              <form action="">
-                <input type="radio" name="vehecle" value="sex"> Máy bay
-                <input type="radio" name="vehecle" value="sex"> Xe oto             
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">Chọn sản phẩm tham gia </td>
-            
-          </tr>
-         
-          </tr>
-          <tr>
-            <td>Ghi chú </td>
-            <td><textarea></textarea></td>
-          </tr>
-          <tr>
-            <td colspan="2" >
-              <button id="button" onclick="getInputValue()">Đồng ý</button></td>
-          </tr>
-          <tr  >
-              <td colspan="2" id="register" hidden></td>
-            </tr>
-        </table>
-   </div>
-    
-      <script>
-        function getInputValue(){
-          var txt = "Bạn đã đăng ký thành công!!!";  
-            document.getElementById("register").innerHTML = txt;  
-            document.getElementById("register").removeAttribute("hidden");
-            document.getElementById("register").style.textAlign = "center";
-        }
-    </script>
+      <tr>
+        <td>Họ và tên </td>
+        <td><input type="text" maxlength="5" id="name"></td>
+      </tr>
+      <tr>
+        <td>Địa chỉ </td>
+        <td><input type="text" maxlength="5" id="name"></td>
+      </tr>
+      <tr>
+        <td>Điện thoại </td>
+        <td><input type="number" maxlength="11" id="pass"></td>
+      </tr>
+      <tr>
+        <td>Khách Viêt Nam </td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Phương tiện </td>
+        <td>
+          <form action="">
+            <input type="radio" name="vehecle" value="sex"> Máy bay
+            <input type="radio" name="vehecle" value="sex"> Xe oto
+          </form>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <fieldset>
+            <legend>Số lượng đoàn khách</legend>
+            <p>Người lớn<input type="number" width="10px">
+              Trẻ em <input type="number" width="10px"></p>
+
+          </fieldset>
+        </td>
+
+      </tr>
+
+      </tr>
+      <tr>
+        <td>Ghi chú </td>
+        <td><textarea></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button id="button" onclick="getInputValue()">Đồng ý</button></td>
+      </tr>
+      <tr>
+        <td colspan="2" id="register" hidden></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    function getInputValue() {
+      var txt = "Bạn đã đăng ký thành công!!!";
+      document.getElementById("register").innerHTML = txt;
+      document.getElementById("register").removeAttribute("hidden");
+      document.getElementById("register").style.textAlign = "center";
+    }
+  </script>
 </body>
 
 </html>
