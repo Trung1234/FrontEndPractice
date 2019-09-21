@@ -1,0 +1,9 @@
+/* body {
+    background-image: url("flower.jpg");
+    background-repeat: no-repeat;
+  } */
+
+  img{
+    border: 2px solid red;
+    border-radius: 100px;
+  }
