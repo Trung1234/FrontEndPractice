@@ -1,0 +1,41 @@
+p.bai3{
+    padding: 20px;
+    text-align: center;
+    background-image: url("greatwall.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    color: #FFFFFF;
+}
+h2{
+    color: #FFCC00;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+h3{
+    color: #008888;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+body.bai4{
+    padding: 25px;
+    text-align: center;
+    background-image: url("Pattaya.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    
+}
+p.para1{
+    background-color: #339999;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+p.para2{
+    font-size: 15px;
+    color: #339999;
+}
