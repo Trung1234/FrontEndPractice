@@ -30,12 +30,13 @@ body.bai4{
     background-size: auto;
     
 }
-p.para1{
+div.para1{
+
     background-color: #339999;
     font-size: 15px;
     color: #FFFFFF;
 }
-p.para2{
+div.para2{
     font-size: 15px;
     color: #339999;
 }
