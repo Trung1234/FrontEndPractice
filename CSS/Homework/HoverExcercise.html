@@ -6,12 +6,13 @@
   <style>
     #link1 {
       font-size: 20px;
-      
+      margin: 10px;
     }
 
     #link2 {
       font-size: 25px;
       color: #4CAF50;
+      margin: 10px;
     }
 
     #button1 {
@@ -25,7 +26,9 @@
       margin: 4px 2px;
       border: solid 2px #4CAF50;
       cursor: pointer;
+      margin: 10px;
     }
+
     #button2 {
       background-color: rgb(124, 54, 54);
       border: none;
@@ -37,11 +40,12 @@
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
+      margin: 10px;
     }
   </style>
 </head>
 
-<body display: inline-block> 
+<body display: inline-block>
   <div style="text-align: center">
     <a id="link1" onmouseover="hoverTextLink1()" onmouseout="outTextLink1()"><u>Text Link</u></a>
     <a id="link2" onmouseover="hoverTextLink2()" onmouseout="outTextLink2()">Text Link</a>
@@ -52,18 +56,18 @@
     var text2 = document.getElementById("link2");
     var button1 = document.getElementById("button1");
     function hoverTextLink1() {
-      document.getElementById("link1").style.color = "#4CAF50";
-      
+      document.getElementById("link1").style.color = "#99ffff";
+
     }
     function outTextLink1() {
       document.getElementById("link1").style.color = "black";
     }
     function hoverTextLink2() {
-      text2.style.color = "blue";
+      // text2.style.color = "blue";
       text2.style.textDecoration = "underline"
     }
     function outTextLink2() {
-      text2.style.color = "black";
+      // text2.style.color = "black";
       text2.style.textDecoration = "none"
     }
     function hoverButton1() {
