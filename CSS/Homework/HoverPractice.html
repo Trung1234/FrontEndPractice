@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #link1 {
+      font-size: 20px;
+    }
+
+    #link2 {
+      font-size: 25px;
+    }
+
+    #button1 {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body display: inline-block> 
+  <div style="text-align: center">
+    <a id="link1" onmouseover="hoverTextLink1()" onmouseout="outTextLink1()"><u>Text Link</u></a>
+    <a id="link2" onmouseover="hoverTextLink2()" onmouseout="outTextLink2()">Text Link</a>
+    <button id="button1" >Link Button</button>
+    <button>Link Button</button>
+  </div>
+  <script>
+    var text2 = document.getElementById("link2");
+    function hoverTextLink1() {
+      document.getElementById("link1").style.color = "blue";
+    }
+    function outTextLink1() {
+      document.getElementById("link1").style.color = "black";
+    }
+    function hoverTextLink2() {
+      text2.style.color = "blue";
+      text2.style.textDecoration = "underline"
+    }
+    function outTextLink2() {
+      text2.style.color = "black";
+      text2.style.textDecoration = "none"
+    }
+
+  </script>
+</body>
+
+</html>
