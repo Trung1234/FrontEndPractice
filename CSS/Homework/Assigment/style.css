@@ -1,16 +1,20 @@
-a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
+a.header {
+    
 }
 
 .a1 {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
     float: left;
     margin-left: 20px;
 }
 
 .a2 {
     float: right;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
     margin-right: 20px;
 }
 
