@@ -1,0 +1,138 @@
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.a1 {
+    float: left;
+    margin-left: 20px;
+}
+
+.a2 {
+    float: right;
+    margin-right: 20px;
+}
+
+ul {
+    
+    list-style: none;
+}
+
+nav {
+    margin: 15px;
+    overflow: auto;
+}
+
+section {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png");
+    height: 500px;
+    padding-top: 7%;
+    padding-left: 4%;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#p1 {
+    font-size: 20px;
+}
+div.container{
+    background-color: rgb(255, 230, 230);
+}
+div.gallery {
+    float: left;
+    width: 33%;
+    height: 350px;
+}
+div.ad {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 30%;
+    height: 100px;
+}
+div.row11 {
+    margin: 10px;
+    padding-top: 40px;
+    background-image: url("halong-bay.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    height: 30%;
+    width: 90%;
+}
+div.row11:hover {
+    border: 2px solid #777;
+}
+div.row12 {
+    margin: 10px;
+    padding-top: 40px;
+    background-image: url("hue.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    height: 30%;
+    width: 90%;
+}
+div.row12:hover {
+    border: 2px solid #777;
+}
+div.row21 {
+    margin: 10px;
+    padding-top: 40px;
+    background-image: url("quangbinh.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    height: 30%;
+    width: 90%;
+}
+div.row21:hover {
+    border: 2px solid #777;
+}
+div.row22 {
+    margin: 10px;
+    padding-top: 40px;
+    background-image: url("hoian.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    height: 30%;
+    width: 90%;
+}
+div.row22:hover {
+    border: 2px solid #777;
+}
+div.col3 {
+    margin: 10px;
+    padding-top: 80px;
+    background-image: url("danang.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    height: 65%;
+    width: 90%;
+}
+div.col3:hover {
+    border: 2px solid #777;
+}
+p.gallery {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
