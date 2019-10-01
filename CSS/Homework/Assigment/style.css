@@ -1,6 +1,3 @@
-a.header {
-    
-}
 
 .a1 {
     text-decoration: none;
@@ -30,6 +27,11 @@ nav {
 
 section {
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
     height: 500px;
     padding-top: 7%;
     padding-left: 4%;
