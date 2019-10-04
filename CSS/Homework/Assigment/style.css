@@ -1,144 +1,160 @@
+ul {
+    list-style: none;
+}
 
 .a1 {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     float: left;
     margin-left: 20px;
 }
 
 .a2 {
-    float: right;
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
+    float: right;
     margin-right: 20px;
 }
-
-ul {
-    
-    list-style: none;
-}
-
 nav {
-    margin: 15px;
+    background-color: rgb(44, 42, 42);
+    height:60px;
     overflow: auto;
 }
 
-section {
+section.pa1 {
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png");
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
-    background-size: cover;
-    height: 500px;
+    background-size: 100%;
+    height: 300px;
     padding-top: 7%;
     padding-left: 4%;
     color: white;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.se2 {
+    background-color: #efefef;
+    padding: 2% 5%;
 }
 
 #p1 {
-    font-size: 20px;
-}
-div.container{
-    background-color: rgb(255, 230, 230);
-}
-div.gallery {
-    float: left;
-    width: 33%;
-    height: 350px;
-}
-div.ad {
-    float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-    width: 31%;
-    height: 100px;
-}
-div.row11 {
-    margin: 10px;
-    padding-top: 40px;
-    background-image: url("halong-bay.jpg");
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    height: 30%;
-    width: 90%;
-}
-div.row11:hover {
-    border: 2px solid #777;
-}
-div.row12 {
-    margin: 10px;
-    padding-top: 40px;
-    background-image: url("hue.jpg");
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    height: 30%;
-    width: 90%;
-}
-div.row12:hover {
-    border: 2px solid #777;
-}
-div.row21 {
-    margin: 10px;
-    padding-top: 40px;
-    background-image: url("quangbinh.jpg");
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    height: 30%;
-    width: 90%;
-}
-div.row21:hover {
-    border: 2px solid #777;
-}
-div.row22 {
-    margin: 10px;
-    padding-top: 40px;
-    background-image: url("hoian.jpg");
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    height: 30%;
-    width: 90%;
-}
-div.row22:hover {
-    border: 2px solid #777;
-}
-div.col3 {
-    margin: 10px;
-    padding-top: 80px;
-    background-image: url("danang.jpg");
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    height: 65%;
-    width: 90%;
-}
-div.col3:hover {
-    border: 2px solid #777;
-}
-p.gallery {
-    text-align: center;
+    margin-top: 0px;
     font-size: 30px;
-    font-weight: bold;
-    color: white;
 }
 
+.container {
+    overflow: auto;
+}
+
+img.gallery {
+    margin-bottom: 7%;
+    width: 100%;
+}
+
+div.galleryleft {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+div.gallerycenter {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+div.gallerylast {
+    float: left;
+    width: 31%;
+}
+
+footer {
+    background-color: #efefef;
+    overflow: auto;
+    padding: 2% 5%;
+}
+
+.se31 {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+.se3 {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+.se32 {
+    float: left;
+    width: 31%;
+}
+
+.banner {
+    background-image: url();
+}
+
+@media screen and (max-width: 992px) {
+    section.pa1 {
+        background-image: none;
+        height: 250px;
+    }
+    h1 {
+        color: rgb(44, 42, 42);
+    }
+    #p1{
+        font-size: 15px;
+        color: rgb(44, 42, 42);
+    }
+    div.galleryleft {
+        width: 100%;
+    }
+    div.gallerylast {
+        width: 100%;
+        margin-right: 0%;
+    }
+    div.gallerycenter {
+        width: 100%;
+        margin-right: 0%;
+    }
+    .se31, .s3, .s32 {
+        width: 97%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav {
+        background-color: rgb(44, 42, 42);
+        overflow: auto;
+        height: 60px;
+    }
+    .a1 {
+        float: left;
+        width: 15%;
+        margin-left: 5%;
+    }
+    .a2 {
+        float: left;
+        width: 15%;
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+
+   
+    .s32 {
+        float: left;
+        width: 100%;
+    }
+}
