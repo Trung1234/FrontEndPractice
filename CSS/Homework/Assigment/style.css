@@ -4,7 +4,7 @@ ul {
 
 .a1 {
     text-decoration: none;
-    color: white;
+    color: black;
     text-transform: uppercase;
     float: left;
     margin-left: 20px;
@@ -12,13 +12,14 @@ ul {
 
 .a2 {
     text-decoration: none;
-    color: white;
+    color: black;
     text-transform: uppercase;
     float: right;
     margin-right: 20px;
 }
 nav {
-    background-color: rgb(44, 42, 42);
+    background-color: white;
+    color: #000;
     height:60px;
     overflow: auto;
 }
@@ -105,16 +106,39 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+    nav {
+        background-color: rgb(44, 42, 42);
+        height:60px;
+        overflow: auto;
+    }
+    .a1 {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        float: left;
+        margin-left: 20px;
+    }
+    
+    .a2 {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        float: right;
+        margin-right: 20px;
+    }
     section.pa1 {
         background-image: none;
         height: 250px;
     }
     h1 {
         color: rgb(44, 42, 42);
+        margin-bottom: 5%
     }
     #p1{
         font-size: 15px;
         color: rgb(44, 42, 42);
+        padding-bottom: 5%;
+        border-bottom: solid black 1px;
     }
     div.galleryleft {
         width: 100%;
@@ -134,7 +158,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    
+    h2 {
+        color: rgb(44, 42, 42);
+    }
+    p{
+        font-size: 15px;
+        color: rgb(44, 42, 42);
+    }
+    #p1{
+        border-bottom: solid black 0px;
+    }
     nav {
         background-color: rgb(44, 42, 42);
         overflow: auto;
