@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS 14</title>
+    <style>
+        div.first {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background-color: green;
+            overflow: scroll;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+        img:hover{
+            opacity: 0.5;
+        }
+        div.vertical {
+            border: red 1px solid;
+            padding: 40px 0px;
+        }
+
+        div p {
+            background-color: violet;
+        }
+
+        div>p {
+            background-color: blue;
+        }
+
+        div+p {
+            background-color: aquamarine;
+        }
+
+        div~p {
+            background-color: yellow;
+        }
+
+        p::before {
+            content: "Before content";
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        p::after {
+            content: "after content";
+            color: red;
+        }
+        li:first-child{
+            color: yellow;
+        }
+        li:last-child{
+            color: red;
+        }
+        li:nth-child(4){
+            color: brown;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <p>Do không có đội dự giải U15 quốc gia, đương kim vô địch V-League Hà Nội mất suất tham dự AFC Champions League
+            và AFC Cup.
+
+            Trong cuộc họp cấp phép cho các CLB tham dự các cup châu Á vào sáng nay 8/10, Liên đoàn bóng đá Việt Nam
+            (VFF) cho biết Hà Nội không có đội dự giải U15 quốc gia. Điều này vi phạm với quy định của AFC, rằng các CLB
+            Việt Nam muốn dự cup châu Á phải tham dự đầy đủ các giải trẻ gồm U15, U17, U19 và U21 trong một mùa.
+
+            Hà Nội là tân vương V-League 2019. Nếu đáp ứng điều kiện thi đấu giải trẻ của AFC, họ được quyền dự vòng
+            loại AFC Champions League. Tuy nhiên, Hà Nội giờ sẽ phải nhường suất cho á quân V-League, đội TP HCM</p>
+
+    </div>
+    <img src="0.jpg" alt="name">
+    <div class="vertical">
+        <p>dsfsfsfsf</p>
+        <p>dfsfsfsf</p>
+        <p>dfsfsfsf</p>
+        <section>
+            <p>fesfvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvewfw</p>
+            <p>fevvvvvvvvvvvvvvvvvvvvvvvvsfewfw</p>
+        </section>
+    </div>
+    <p>fesfewfddddddddw</p>
+    <p>fesfewfw</p>
+    <div>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Tea</li>
+            <li>Tea</li>
+            <li>Tea</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+    </div>
+</body>
+
+</html>
