@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS 15</title>
+    <style>
+        .bor {
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        .gradient {
+            background-image: linear-gradient(to bottom right, rgb(255, 0, 191), rgb(0, 255, 76));
+            padding: 10px;
+        }
+
+        .gradient2 {
+            background-image: linear-gradient(to bottom right, rgb(255, 0, 191), rgb(0, 255, 76), red, yellow, blue);
+            padding: 10px;
+        }
+
+        h1 {
+            text-shadow: 5px 4px red;
+        }
+
+        .shadow {
+            box-shadow: 10px 15px 14px grey;
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            animation-duration: 20s;
+            /* animation-name: change; */
+            animation-name: color;
+            transition: 3s;
+            padding: 10px;
+        }
+
+        .shadow:hover {
+            height: 200px;
+            width: 150px;
+            padding: 30px;
+        }
+
+        .trans {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            60% {
+                background-color: yellow;
+                left: 1200px;
+                top: 0px;
+            }
+
+            /* 50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            } */
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes change {
+            from {
+                background-color: aqua;
+            }
+
+            to {
+                background-color: red;
+            }
+        }
+
+        @keyframes color {
+            0% {
+                background-color: aqua;
+            }
+
+            25% {
+                background-color: red;
+            }
+
+            75% {
+                background-color: rgb(72, 255, 0);
+            }
+
+            25% {
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    @
+    <div class="outside">
+        <h1>Text shadow</h1>
+        <!-- <div class="bor">
+            <p> Text inside</p>
+            <button class="bor">dsfsfesff</button>
+        </div>
+        <div class="gradient">
+            <p> Text inside</p>
+        </div>
+        <div class="gradient2">
+            <p>Multiple color</p>
+        </div>
+        <div class="shadow">
+            <p>Text shadow</p>
+        </div> -->
+        <div class="trans">
+            <img src="bird.jpg">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
