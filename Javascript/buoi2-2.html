@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 2- function and object</title>
+
+</head>
+
+<body>
+    <p id="demo">Hello world</p>
+
+    <button onclick='myFunction(3,4)'>use function</button>
+    <button onclick='getMotobike()'>get value from object</button>
+    <script>
+        var motobike = {
+            name: "Air blade",
+            color: "blue",
+            price: 100000
+        };
+        function myFunction(a, b) {
+            document.getElementById("demo").innerHTML = a * b;
+        }
+
+        function getMotobike() {
+            document.getElementById("demo").innerHTML =
+                motobike.name + " and " + motobike.color + " .";
+        }
+
+    </script>
+</body>
+
+</html>
