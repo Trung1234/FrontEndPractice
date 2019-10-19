@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 3</title>
+
+</head>
+
+<body>
+    
+    <select onchange='show()' id="list">
+        <option value="2">two
+        <option value="1">one
+        <option value="3">three
+        <option value="1">one
+        <option value="1">one
+    </select>
+    <p id="demo">Hello world</p>
+    <script>
+        function show() {
+            document.getElementById("demo").innerHTML = document.getElementById("list").value;
+        }
+    </script>
+</body>
+
+</html>

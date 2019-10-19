@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 3 - cacaludator</title>
+
+</head>
+
+<body>
+    <div>
+        <p id="demo">dsfwsfwf</p>
+        <input type="text" id="input1" style="margin: 20px;">
+        <input type="text" id="input2" style="margin: 20px;">
+        <input type="text" id="input3" style="margin: 20px;" onkeydown="keyDown()">
+        <!-- <img src="0.jpg" onmouseover="bigImg(this)" onmouseout="smalImg(this)"> -->
+        <button onclick="getLength()">get Length</button>
+    </div>
+    <div>
+        <button onclick='plus()' style="margin: 20px;">Add</button>
+        <button onclick='minus()' style="margin: 20px;">Minus</button>
+        <button onclick='divide()' style="margin: 20px;">Divide</button>
+        <button onclick='multiple()' style="margin: 20px;">Multiple</button>
+        <button onclick='remain()' style="margin: 20px;">%</button>
+    </div>
+    <script>
+        function plus() {
+            var a =  Number(document.getElementById("input1").value);
+            var b = Number(document.getElementById("input2").value);
+            alert(a + b);
+        }
+        function minus() {
+            var a = Number(document.getElementById("input1").value);
+            var b = Number(document.getElementById("input2").value);
+            alert(a - b);
+        }
+        function divide() {
+            var a = Number(document.getElementById("input1").value);
+            var b = Number(document.getElementById("input2").value);
+            alert(a / b);
+        }
+        function multiple() {
+            var a = Number(document.getElementById("input1").value);
+            var b = Number(document.getElementById("input2").value);
+            alert(a * b);
+        }
+        function remain() {
+            var a = Number(document.getElementById("input1").value);
+            var b = Number(document.getElementById("input2").value);
+            alert(a % b);
+        }
+        function bigImg(x){
+            x.style.height = "62px";
+            x.style.width = "62px";
+        }
+        function smalImg(x){
+            x.style.height = "30px";
+            x.style.width = "30px";
+        }
+        function getLength(){
+            var c =document.getElementById("demo").innerHTML.length
+            alert(c);
+        }
+    </script>
+</body>
+
+</html>
