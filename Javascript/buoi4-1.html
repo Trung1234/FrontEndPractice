@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 4-string</title>
+
+</head>
+
+<body>     
+    <input type="text" id="in">
+    <p id="demo" >Hello world</p>
+    <button onclick="cutPar()">cut</button>
+    <button onclick="replaceStr()">replace</button>
+    <textarea id="area"></textarea>
+    <button onclick="toUpper()">toUppder</button>
+    <button onclick="toLower()">toLower</button>
+    <script>
+    function cutPar(){
+        var str = document.getElementById("in").value;
+        document.getElementById("demo").innerHTML = str.substr(4,6);
+    }
+    function  replaceStr(){
+        var str = document.getElementById("in").value;
+        document.getElementById("demo").innerHTML = str.replace("Ha Noi","Ho Chi Minh");
+    }
+    function  toUpper(){
+        var str = document.getElementById("area").value;
+        document.getElementById("area").value = str.toUpperCase();
+    }
+    function  toLower(){
+        var str = document.getElementById("area").value;
+        document.getElementById("area").value = str.toLowerCase();
+    }
+    </script>
+</body>
+
+</html>

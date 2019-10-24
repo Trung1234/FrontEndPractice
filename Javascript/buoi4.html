@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 4</title>
+
+</head>
+
+<body>     
+    <input type="text" id="in">
+    <p id="demo" >Hello world</p>
+    <button onclick="cutPar()">cut</button>
+    <script>
+    //    var str = "Rikkeisoft";
+    //     document.getElementById("demo").innerHTML = str.indexOf("soft");
+    function cutPar(){
+        var str = document.getElementById("in").value;
+        document.getElementById("demo").innerHTML = str.slice(0,2);
+    }
+    </script>
+</body>
+
+</html>
