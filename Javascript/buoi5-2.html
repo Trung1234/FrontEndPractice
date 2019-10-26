@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 5</title>
+
+</head>
+
+<body>     
+    <input type="text" id="in">
+    <p id="demo" >Hello world</p>
+    <button onclick="getTime()">get Time</button>
+    <script>
+
+    function getTime(){
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.getHours()+":"+d.getMinutes() + " - "
+                                                    +d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+    }
+    </script>
+</body>
+
+</html>

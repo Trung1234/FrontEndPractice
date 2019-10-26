@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 5</title>
+
+</head>
+
+<body>     
+    <input type="text" id="in">
+    <p id="demo" >Hello world</p>
+    <button onclick="cutStr()">cut</button>
+    <button onclick="roundNumber()">round</button>
+    <script>
+
+    function cutStr(){
+        var str = document.getElementById("in").value;
+        var arr = str.split(" ");
+        document.getElementById("demo").innerHTML = arr[2];
+    }
+    function roundNumber(){
+        var str = Number(document.getElementById("in").value);
+        document.getElementById("demo").innerHTML =
+         str.toFixed("0")+"<br/>"+str.toFixed("1")+"<br/>"+
+         str.toFixed("2")+"<br/>"+str.toFixed("3");
+    }
+    </script>
+</body>
+
+</html>

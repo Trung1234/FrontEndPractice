@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Js buoi 5-Array</title>
+
+</head>
+
+<body>     
+    <input type="text" id="in">
+    <p id="demo" >Hello world</p>
+    <button onclick="addElement()"> push array</button>
+    <button onclick="removeElement()"> pop array</button>
+    <button onclick="addFirstElement()">unshift  array</button>
+    <button onclick="removeFirstElement()">shift array</button>
+    <button onclick="spliceElement()">splice Array</button>
+    <button onclick="concatElement()">concat Array</button>
+    <button onclick="sliceElement()">slice Array</button>
+    <button onclick="sortElement()">sort Array</button>
+    <button onclick="reverseElement()">reverse Array</button>
+    <button onclick="sortNumber()">sort Number</button>
+    <button onclick="reverseNumber()">reverse Number</button>
+    <script>
+        var arr = ["Trung","Tung","Hieu"];
+        var fruits = ["Banana","Apple","Kiwi","Orange"]
+        var numbers = [10,42,100,24,87,234]
+        // document.getElementById("demo").innerHTML = arr[1];
+        function addElement(){
+            fruits.push(document.getElementById("in").value);
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        function removeElement(){
+            fruits.pop();
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        function addFirstElement(){
+            fruits.unshift(document.getElementById("in").value);
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        function removeFirstElement(){
+            fruits.shift();
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        function spliceElement() {
+            fruits.splice(2, 0, document.getElementById("in").value);
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        function concatElement() {    
+            document.getElementById("demo").innerHTML = (fruits.concat(arr)).concat(document.getElementById("in").value);
+        }
+        function sliceElement(){
+            var citrus = fruits.slice(2);
+            document.getElementById("demo").innerHTML = citrus;
+        }
+        function sortElement(){
+            document.getElementById("demo").innerHTML = fruits.sort();
+        }
+        function reverseElement(){
+            document.getElementById("demo").innerHTML = fruits.reverse();
+        }
+        function sortNumber(){           
+            document.getElementById("demo").innerHTML = numbers.sort(function(a,b){ return a -b});
+        }
+        function reverseNumber(){
+            document.getElementById("demo").innerHTML = numbers.sort(function(a,b){ return b -a});
+        }
+    </script>
+</body>
+
+</html>
