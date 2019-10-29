@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <input type="text" id="in">
+
+    <p id="demo">Mời nhập vào điểm!</p>
+    <button onclick="trigger()">call</button>
+    <script>
+        function trigger() {
+            var a = document.getElementById("in").value;
+            if (a <= 10) {
+                if (a < 10 && a > 8) {
+                    alert("học sinh giỏi");
+                } else if (a > 6.5 && a <= 8) {
+                    alert("học sinh khá ");
+                }
+                else {
+                    alert("học sinh trung bình ");
+                }
+            } else {
+                alert("không phải điểm");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

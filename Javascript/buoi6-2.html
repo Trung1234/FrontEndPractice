@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p >User Name</p>
+    <input type="text" id="name">
+    <p >Password</p>
+    <input type="password" id="password"> <br>
+    <button onclick="trigger()">Register</button>
+    <script>
+        function trigger() {
+            var name = document.getElementById("name").value;
+            var pass = document.getElementById("password").value;
+            if (name.length == 0) {
+                alert("hãy nhập vào tên người dùng");
+            }
+            else if (pass.length == 0) {
+                alert("hãy nhập vào mật khẩu người dùng");
+            }
+            else{
+                alert("đăng kí thành công");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

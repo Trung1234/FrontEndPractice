@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <input type="text" id="in">
+
+    <p id="demo">Mời nhập vào 1 số!</p>
+    <button onclick="trigger()">call</button>
+    <script>
+        function trigger() {
+            var a = document.getElementById("in").value;
+            if (a%2==0) {
+                if(a>10){
+                    alert("đây là số chẵn > 10");
+                }else{
+                    alert("đây là số chẵn <= 10");
+                }                
+            }
+            else if (a%2!=0) {
+                if(a>10){
+                    alert("đây là số lẻ > 10");
+                }else{
+                    alert("đây là số lẻ < 10");
+                }  
+            }
+            else{
+                alert("không biết");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
