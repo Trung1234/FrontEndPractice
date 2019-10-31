@@ -1,0 +1,48 @@
+
+.container{
+  width: 640px; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.result { 
+  border: solid 5px green;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden; 
+  text-align: center;
+}
+h2{
+  color: pink;
+  opacity: 0.6;
+  text-align: center;
+}
+.result span  {
+  color: red;
+  font-size: 30px;
+  display: inline-block;
+  margin: 40% 10px 0 0;
+  padding: 5px 10px;
+}
+.button {
+  background-color: #4CAF50;
+  border: solid 2px lightblue;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+#input {
+  text-align: center;
+}
+#result{
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
