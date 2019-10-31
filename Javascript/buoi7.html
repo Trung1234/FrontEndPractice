@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p >Tên</p>
+    <input type="text" id="name">
+    <p >Điểm toán</p>
+    <input type="text" id="math">
+    <p >Điểm lý</p>
+    <input type="text" id="physic">
+    <p >Điểm hóa</p>
+    <input type="text" id="chemical"><br>
+    <button onclick="trigger()" style="margin: 15px">Register</button>
+    <script>
+        function trigger() {
+            var name = document.getElementById("name").value;
+            var math = Number(document.getElementById("math").value);
+            var physic = Number(document.getElementById("physic").value);
+            var chemical = Number(document.getElementById("chemical").value);
+            if (name.length == 0) {
+                alert("hãy nhập vào tên người dùng");
+            }
+            else if (math.length == 0 ) {
+                alert("hãy nhập vào điểm toán");
+            }
+            else if (physic.length == 0) {
+                alert("hãy nhập vào điểm lý");
+            }
+            else if (chemical.length == 0) {
+                alert("hãy nhập vào điểm hóa");
+            }
+            else{
+                
+                if(math > 10 || math < 0){
+                    alert("điểm toán nhập vào không hợp lệ");
+                }
+                else if(physic > 10 || physic < 0){
+                    alert("điểm lý nhập vào không hợp lệ");
+                }
+                else if(chemical >  10 || chemical <0){
+                    alert("điểm hóa nhập vào không hợp lệ");
+                }else{
+                    alert("bạn đã nhập thành công");
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

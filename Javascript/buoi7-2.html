@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p >Chọn kết kết quả đúng <br>
+    9+1=? <br>
+    1. 2<br>
+    2. 5 <br>
+    3. 7<br>
+    4. 10 <br>
+    </p>
+
+    <input type="text" id="answer" placeholder="đáp án"><br>
+    <button onclick="trigger()" style="margin: 15px">Submit</button>
+    <script>
+        function trigger() {
+            var a = Number(document.getElementById("answer").value);
+            switch(a){
+            case 4:
+                alert("right answer");
+            break;  
+            default:
+                alert("wrong answer");
+            break;
+        }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Buổi 7 swich case
+        </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="content" style="margin: 20px; color: red;font-size: 30px;"></p>
+        <button onclick="getDay()" style="margin: 20px;font-size: 30px;">get day</button>
+    </body>
+    <script>
+        // function getDay(){
+            var day = new Date().getDay();
+        switch(day){
+            case 0:
+                date = "Monday";
+            break;  
+            case 1:
+                date = "Tuesday";
+            break;
+            case 2:
+                date = "Wednesday";
+            break;
+            case 3:
+                date = "Thursday";
+            break;
+            case 4:
+                date = "Friday";
+            break;  
+            case 5:
+                date = "Saturday";
+            break;
+            case 6:
+                date = "Sunday";
+            break;
+        }
+        document.getElementById("content").innerHTML = "Today is "+date;
+        // }
+        
+    </script>
+</html>
