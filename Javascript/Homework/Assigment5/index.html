@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Javascript asiment 5</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<html>
+
+<body>
+  <div class="container">
+    <p>
+      <span>Họ:</span>
+      <span>
+          <select id="firtname">
+              <option value="Khác"></option>
+              <option value="Nguyễn">Nguyễn</option>
+              <option value="Trần">Trần</option>
+            </select>
+      </span>     
+    </p>
+    <p>
+        <span>Tên:</span>
+        <span>
+            <input type="text" name="name" id="lastname">
+        </span>       
+    </p>
+    <p class="output">
+      <button type="button" onclick="generate()">Gen</button>
+    </p>
+    <p class="output">
+      <input type="text" name="name" id="fullname" readonly>
+    </p>
+    
+    <p>
+      <span>Font-size:</span>
+      <span>
+        <input type="text" id="font" >
+      </span>
+    </p>
+    <p>
+      <span>Color:</span>
+      <span>
+        <input type="text" id="color">
+      </span>
+    </p>
+    <p>
+      <span>Type:</span>
+      <span>
+          <select id="type">
+              <option value="Bold">Bold</option>
+              <option value="Italic">Italic</option>
+            </select>
+      </span>     
+    </p>
+    <p class="output">
+      <button type="button" onclick="finalGenerate()">Gen</button>
+    </p>
+    <p class="output">
+      <span id="final"></span>
+    </p>
+    <p class="output">
+      <button type="button" onclick="validate()">check</button>
+    </p>
+  
+  </div>
+  <script src="myScript.js"></script>
+
+
+
+</body>
+
+</html>

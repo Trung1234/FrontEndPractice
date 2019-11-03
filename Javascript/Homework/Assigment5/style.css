@@ -1,0 +1,24 @@
+
+
+.container{
+  width: 240px; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+.container > p{
+  margin: 0 auto;
+  /* text-align: center; */
+}
+p > span{
+  width: 50%;
+  float: left;
+  margin: 5px 0px;
+}
+#final{
+  width: 100%;
+}
+.output{
+  padding-left: 50%;
+  margin: 5px 0px;
+}
