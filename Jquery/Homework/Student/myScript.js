@@ -3,9 +3,10 @@
 
 
 function addRow(){
-    var i = document.getElementById("students").rows.length-1;
+    var i =$('#students tr').length-1;
+
     var name = $("#name").val();
-    var category = Number($("#class").val());
+    var category = $("#class").val();
     var math = Number($("#math").val());
     var physic = Number($("#physic").val());
     var chemical = Number($("#chemical").val());
