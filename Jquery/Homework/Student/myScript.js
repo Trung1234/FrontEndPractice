@@ -3,7 +3,7 @@
 
 
 function addRow(){
-    var i =$('#students tr').length-1;
+    var i = $('#students tr').length-1;
 
     var name = $("#name").val();
     var category = $("#class").val();
@@ -12,7 +12,8 @@ function addRow(){
     var chemical = Number($("#chemical").val());
     i++;
     if(name.length==0){
-        alert("Họ tên bắt buộc phải nhập");
+        $("#error").html("Họ tên bắt buộc phải nhập");
+        // alert("Họ tên bắt buộc phải nhập");
     }else{
         if(category.length==0){
             alert("Lớp học bắt buộc phải nhập");

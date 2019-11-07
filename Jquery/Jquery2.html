@@ -15,6 +15,12 @@
   padding: 50px;
   display: none;
 }
+#animation{
+    background:#98bf21;
+    height:100px;
+    width:100px;
+    position:absolute;
+}
 </style>
 </head>
 <body>
@@ -22,7 +28,7 @@
 <div id="flip">Click to slide down panel</div>
 <div id="panel">Hello world!</div>
 <button id="start">Start Animation</button>
-<div id="animation" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+<div id="animation" ></div>
 </body>
 <script> 
     $(document).ready(function(){
@@ -36,6 +42,13 @@
             height: '170px',
             width: '170px'
         });
+        $("#animation").animate({
+            left: '0px',
+            opacity: '1',
+            height: '100px',
+            width: '100px'
+        });
+        $("#animation").css("")
       });
     });
     </script>
