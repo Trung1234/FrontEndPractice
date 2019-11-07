@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jquery buoi 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 3</li>
+    </ul>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <!-- <div>
+        <p id="p1">
+            Paragraph to alert
+        </p>
+        
+    </div> -->
+    <div>
+            <p id="p2">
+                    Paragraph to test hover
+            </p>
+    </div>
+    <p>Mời nhập vào điểm lý</p>
+    <input type="text" id="name">
+</body>
+<script>
+    $(document).ready(function () {
+        $("#hide").click(function () {
+            $("li").hide(3000);
+        });
+        $("#show").click(function () {
+            $("li").show(3000);
+        });
+        // $("#p1").mouseenter(function (){
+        //     alert("Hovered")
+        // });
+        $("#p2").hover(function(){
+            $(this).css("background-color", "blue");
+        });
+        $("#name").focus(function(){
+            $(this).css("background-color", "yellow");
+            
+        });
+        $("#name").blur(function(){
+            $(this).css("background-color", "red");
+            
+        });
+    });
+
+</script>
+
+</html>

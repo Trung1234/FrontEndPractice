@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Student assiment </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+</head>
+<html>
+
+<body>
+  <div class="container">
+
+    <p>
+        <span>Họ tên:</span>
+        <span>
+            <input type="text" name="name" id="name">
+        </span>       
+    </p>
+
+    <p>
+      <span>Lớp:</span>
+      <span>
+        <input type="text" id="class" >
+      </span>
+    </p>
+    <p>
+      <span>Điểm toán:</span>
+      <span>
+        <input type="text" id="math">
+      </span>
+    </p>
+    <p>
+      <span>Điểm lý:</span>
+      <span>
+        <input type="text" id="physic">
+      </span>
+    </p>
+    <p>
+      <span>Điểm hóa:</span>
+      <span>
+        <input type="text" id="chemical">
+      </span>
+    </p>
+  </div>
+
+  
+  <div class="container">
+      <button onclick="addRow()">add</button>
+    <table id="students">
+      <tr>
+        <th>STT</th>
+        <th>Họ tên</th>
+        <th>Toán</th>
+        <th>Lý</th>
+        <th>Hóa</th>
+      </tr>
+     
+    </table>
+  </div>
+  <script src="myScript.js"></script>
+
+
+
+</body>
+
+</html>

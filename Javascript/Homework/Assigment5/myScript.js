@@ -22,7 +22,6 @@ function validate(){
     var fullname = document.getElementById("fullname").value
     var color = document.getElementById("color").value;
     var font = document.getElementById("font").value;
-    var type = document.getElementById("type").value;
     if(fullname.length==0){
         alert("hãy nhập vào tên");
     }
