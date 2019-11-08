@@ -25,11 +25,15 @@ function addRow(){
                     if(chemical.length==0 || chemical <= 0 || chemical > 10){
                         $("#chemicalError").css("color", "red").text("Điểm hóa bắt buộc phải nhập và phải trong khoảng từ 0 đến 10");
                     }else{
+                        var average = (math+physic+chemical)/3;
                         $(document).ready(function () {
                             $('#students').append('<tr><td>'+tableRows+
                             '</td><td style="text-align:left;">'+name+'</td><td>'
-                            +classOfStudent+'</td><td>'+math+'</td><td>'
-                            +physic+'</td><td>'+chemical+'</td></tr>');
+                            +classOfStudent+'</td><td>'+math
+                            +'</td><td>'+physic
+                            +'</td><td>'+chemical
+                            +'</td><td>'+average.toFixed(2)+
+                            '</td></tr>');
                         });
                     }
                 }
