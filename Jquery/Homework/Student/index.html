@@ -7,46 +7,39 @@
   <meta charset="UTF-8">
 </head>
 <html>
-
 <body>
-  <div class="container">
-
-    <p>
-        <span>Họ tên:</span>
-        <span>
-            <input type="text" name="name" id="name">
-        </span>    
-    </p>
-
-    <p>
+  <div >
+    <div class="container">
+      <span>Họ tên:</span>
+      <input type="text" name="name" id="name">
+      <p id="nameError"> </p>
+    </div>
+    <div class="container">
       <span>Lớp:</span>
-      <span>
-        <input type="text" id="class" >
-      </span>
-    </p>
-    <p>
+      <input type="text" id="class">
+      <p id="classError"></p>
+    </div>
+    <div class="container">
       <span>Điểm toán:</span>
-      <span>
-        <input type="text" id="math">
-      </span>
-    </p>
-    <p>
+      <input type="text" id="math">
+      <p id="mathError"></p>
+    </div>
+    <div class="container">
       <span>Điểm lý:</span>
-      <span>
-        <input type="text" id="physic">
-      </span>
-    </p>
-    <p>
+      <input type="text" id="physic">
+      <p id="physicError"></p>
+    </div>
+    <div class="container">
       <span>Điểm hóa:</span>
-      <span>
-        <input type="text" id="chemical">
-      </span>
-    </p>
+      <input type="text" id="chemical">
+      <p id="chemicalError"></p>
+    </div>
   </div>
-
-  
   <div class="container">
-      <button onclick="addRow()">add</button>
+    <p id="title">Danh sách học viên</p>
+  </div>
+  <div class="container">
+    <button onclick="addRow()">add</button>
     <table id="students">
       <tr>
         <th>STT</th>
@@ -56,13 +49,9 @@
         <th>Lý</th>
         <th>Hóa</th>
       </tr>
-     
     </table>
   </div>
   <script src="myScript.js"></script>
-
-
-
 </body>
 
 </html>
