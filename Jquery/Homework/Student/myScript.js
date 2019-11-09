@@ -1,6 +1,3 @@
-  
-
-
 
 function addRow(){
     resetError();
@@ -25,7 +22,6 @@ function addRow(){
                     if(chemical.length==0 || chemical <= 0 || chemical > 10){
                         $("#chemicalError").css("color", "red").text("Điểm hóa bắt buộc phải nhập và phải trong khoảng từ 0 đến 10");
                     }else{
-                        // var average = (math+physic+chemical)/3;
                         $(document).ready(function () {
                             $('#students').append('<tr id="row'+tableRows+'"><td>'+tableRows+
                             '</td><td style="text-align:left;">'+name +'</td>'
@@ -34,7 +30,7 @@ function addRow(){
                             +math
                             +'</td><td class="physic">'+physic
                             +'</td><td class="chemical">'+chemical
-                            +'</td><td class="aver">'+'?'+
+                            +'</td><td class="average">'+'?'+
                             '</td></tr>');
                         });
                     }
@@ -58,13 +54,13 @@ function caculate(){
         var physic = Number($("#row"+i).find("td.physic").text());
         var chemical = Number($("#row"+i).find("td.chemical").text());
         var average  = ((math+physic+chemical)/3).toFixed(2);
-        $("#row"+i).find("td.aver").text(average );
+        $("#row"+i).find("td.average").text(average );
     }
 }
 function findExcellent(){
     var rows = $('#students tr').length;
     for (var i = 1; i<= rows; i++) {
-        var average  = Number($("#row"+i).find("td.aver").text());
+        var average  = Number($("#row"+i).find("td.average").text());
         if(average >=8){
             $("#row"+i).css("background-color", "red");
         }

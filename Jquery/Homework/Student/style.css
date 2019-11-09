@@ -1,5 +1,16 @@
 
-
+button {
+  background-color: rgb(160, 7, 7);
+  border: 1px solid black;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 1px;
+  cursor: pointer;
+}
 .container{
   width: 800px;
     height: auto;
@@ -25,7 +36,10 @@
   float: left;
   margin: 5px;
 }
-
+.container button{
+  margin-right: 10%;
+  float: right;
+}
 #students{
   border-spacing: 0px;
   margin: 10px 0px;
