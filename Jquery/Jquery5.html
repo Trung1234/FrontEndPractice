@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+            <ol>
+                    <li><span>List item 1</span></li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ol>
+    </div>
+    <div id="test4">
+        <p>
+            <span>dsfsffs</span>
+        </p>
+    </div>
+    <p id="test1">paragraph 1</p>
+    <p id="test2">paragraph 2</p>
+
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+    <img src="0.jpg" width="100" , height="100" id="image">
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+    <button id="btn4">Set Img</button>
+    <button id="btn5">Append</button>
+    <button id="btn6">Prepend</button>
+    <button id="btn7">Insert before Image</button>
+    <button id="btn8">Insert after Image</button>
+    <button id="btn9">Remove Image</button>
+    <button id="btn10">Test parent</button>
+    <button id="btn11">Test parent until</button>
+    <button id="btn12">Test children</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#test1").text("Hello world!");
+        });
+        $("#btn2").click(function () {
+            $("#test2").html("<b>Hello world!</b>");
+        });
+        $("#btn3").click(function () {
+            $("#test3").val("Mickey");
+        });
+        $("#btn4").click(function () {
+            $("#image").attr({
+                "src": "logo.png",
+                "width": "500px",
+                "height": "500px"
+            });
+        });
+
+        $("#btn5").click(function () {
+            $("ol").css({"color":"red","font-weight":"bold"}).append("<li>Appended item</li>");
+        });
+        $("#btn6").click(function () {
+            $("ol").css({"color":"green","font-weight":"italic"}).prepend("<li>Prepended item</li>");
+        });
+        $("#btn7").click(function () {
+            $("img").before("<b>Before</b>");
+        });
+
+        $("#btn8").click(function () {
+            $("img").after("<i>After</i>");
+        });
+        $("#btn9").click(function(){
+            $("img").remove();
+        });
+        $("#btn10").click(function(){
+            $("span").parent().css({"color": "red", "border": "2px solid red"});
+        });
+        $("#btn11").click(function(){
+            $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
+        });
+        $("#btn12").click(function(){
+            $("#test4").children().css({"color": "red", "border": "2px solid red"});
+        });
+        
+    });
+</script>
+
+</html>
