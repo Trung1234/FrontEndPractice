@@ -79,12 +79,19 @@ body {
 }
 
 
-/* 
+
 .flex-container {
     display: flex;
-    align-items: stretch;
+    align-items:flex-start;
+    /* align-items: stretch; */
 }
 
-.flex-container > div {
-    text-align: left;
-} */
+.child {
+    flex-grow: 3;
+}
+
+.child-three {
+    flex-grow: 7;
+    flex-shrink: 0;   /* do not shrink - initial value: 1 */
+    flex-basis: 25em; /* width/height  - initial value: auto */
+  }
