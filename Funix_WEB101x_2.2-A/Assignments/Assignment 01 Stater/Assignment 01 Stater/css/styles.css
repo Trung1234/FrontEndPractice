@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
 }
@@ -30,23 +31,41 @@ body {
     box-shadow: 0 0 1px rgba(0,0,0,.5);
     background-color: #fff;
     position: relative;
-
     padding: 40px
 }
 
 
-/* #info  .section {
-    width: 25%;
-    margin: 1% 2%;
+#info   {
     display: inline-block;
-} */
+    width: 49%;
+}
+#info span {
+    text-align: center;
+}
 
-.col-info {
-    width: 10%;
+#info h1 {
+    color: blue;
+}
+
+
+
+.col-label {
+    width: 19%;
+
+
     display: inline-block;
 }
+
+
+.col-info {
+    width: 79%;
+    display: inline-block;
+}
+
+
 #col-info-img {
-    width: 75%;
+    position: absolute;
+    width: 49%;
     display: inline-block;
 }
 
@@ -59,6 +78,13 @@ body {
     border-bottom: 1px solid black
 }
 
-/* #info .section-title{
-    border-bottom: 0px;
+
+/* 
+.flex-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.flex-container > div {
+    text-align: left;
 } */
