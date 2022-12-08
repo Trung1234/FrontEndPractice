@@ -75,10 +75,21 @@ body {
     float: right;
 }
 .section-title {
+    text-transform: uppercase;
     border-bottom: 1px solid black
 }
 
+#contact-link  a {
+    color: blue;
+    text-decoration: none;
+}
 
+ol {
+    padding-inline-start: 20px;
+}
+#contact-link  {
+    border-top: 2px solid black
+}
 
 .flex-container {
     display: flex;
