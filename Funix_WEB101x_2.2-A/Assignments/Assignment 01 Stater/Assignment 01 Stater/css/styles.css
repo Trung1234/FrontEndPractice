@@ -48,11 +48,8 @@ body {
 }
 
 
-
 .col-label {
     width: 19%;
-
-
     display: inline-block;
 }
 
@@ -90,7 +87,7 @@ ol {
 
 #hobbies {
     padding-inline-start : 15px;
-    border-bottom: 400px;
+    margin-bottom: 40px;
 }
 
 
