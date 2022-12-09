@@ -70,8 +70,8 @@ body {
 }
 
 #col-info-img img {
-    width: 80px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
     float: right;
 }
 .section-title {
@@ -85,8 +85,25 @@ body {
 }
 
 ol {
-    padding-inline-start: 20px;
+    padding-inline-start: 15px;
 }
+
+#hobbies {
+    padding-inline-start : 15px;
+    border-bottom: 400px;
+}
+
+
+.project-name {
+    text-transform: uppercase;
+}
+
+.project-content {
+    padding-inline-start : 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 #contact-link  {
     border-top: 2px solid black
 }
