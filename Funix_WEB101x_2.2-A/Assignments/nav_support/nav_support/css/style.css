@@ -1,0 +1,46 @@
+p {
+    margin: 0;
+}
+
+#nav-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: inline-flex;
+    background-color: antiquewhite;
+    font-size: 15px;
+}
+
+#nav-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+#nav-container p, div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#nav-container p {
+    flex: 15%;
+    height: 100%;
+}
+
+#nav-container div {
+    flex: 40%;
+}
+
+#nav-container p a {
+    color: #111111;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav-container a:hover {
+    background-color: lightblue;
+}
