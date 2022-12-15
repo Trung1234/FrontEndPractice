@@ -1,0 +1,27 @@
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>The best page ever</title>
+  </head>
+    <!--Lab 7.3. Xác định vị trí của một Element so với phần tử cha của nó sử dụng Absolute Positioning-->
+    <style>
+        #searchbar {
+          position: absolute;
+          top: 50px;
+          right: 50px;
+        }
+        section {
+          position: relative;
+        }
+      </style>
+      <body>
+        <h1>Welcome!</h1>
+        <section>
+          <form id="searchbar">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search">
+            <input type="submit" name="submit" value="Go!">
+          </form>
+        </section>
+      </body>
+</html>
