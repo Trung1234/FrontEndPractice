@@ -49,11 +49,8 @@
 }
 
 section > .container{
-    width: 1170px;
-    margin: auto;
-    display: block;
-
-    padding: 30px 50px;
+    display: flex;
+    padding: 0 10%;
 }
 
 #banner {
@@ -75,18 +72,30 @@ section > .container{
 
 .container
 {
-    overflow: hidden;
-
-
+    display: flex;
 }
+
 
 
 #target {
+    text-align: left;
     float: left;
-    width: 50%;
+    width: 40%;
+    margin-left: 10%;
 }
 
 #personal-info {
+    text-align: lr;
     float: left;
-    width: 50%;
+    width: 40%;
+    margin-right: 10%;
+    /* margin-left: 0px; */
 }
+
+ul li::before {
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }

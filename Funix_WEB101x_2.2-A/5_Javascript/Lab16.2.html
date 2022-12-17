@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let numNeighbours  = Number(prompt("How many neighbor countries does your country have", 2));
+  if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+  } else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+  } else {
+    console.log('No borders!');
+  }
+  console.log('=== so sanh type va value');
+}
+</script>
+
+</body>
+</html>
