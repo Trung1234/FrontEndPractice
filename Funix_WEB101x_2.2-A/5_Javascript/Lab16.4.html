@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let isIsland = false;
+  let country  = prompt("Please input  country", "England");
+  let language = prompt("Please input  language", "English").toLowerCase();
+  let population = Number(prompt("Please input  population", 50000));
+  let tempIsland = prompt("Island", "yes").toLowerCase();
+  while(true) {
+    if (tempIsland === 'yes' || tempIsland === 'no' ) {
+        isIsland = (tempIsland === 'yes') ? true : false
+        break;
+    }
+    tempIsland = prompt("Is island", "yes").toLowerCase();
+  }
+  
+  console.log(population);
+  console.log(isIsland);
+  if (language === 'english' 
+    && population < 50000000 && !isIsland) {
+    console.log(`You should live in  ${country}”`);
+  } else {
+    console.log(`${country} does not meet your criteria”`);
+  }
+  //   Lab 16.4. Câu lệnh switch
+  switch (language) {
+  case 'chinese', 'mandarin':
+  console.log('MOST number of native speakers!');
+    break;
+  case 'spanish':
+  console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+  console.log('3rd place');
+    break;
+  case 'hindi':
+  console.log('Number 4');
+    break;
+  case 4:
+  console.log('language');
+    break;
+  case 'arabic':
+   console.log('5th most spoken language');
+    break;
+  default:
+    console.log('Great language too :D');
+}
+}
+</script>
+
+</body>
+</html>

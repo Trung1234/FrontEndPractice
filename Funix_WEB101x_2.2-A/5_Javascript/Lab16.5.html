@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let isIsland = false;
+  let country  = prompt("Please input  country", "England");
+  let language = prompt("Please input  language", "English").toLowerCase();
+  let population = Number(prompt("Please input  population", 50000));
+  let tempIsland = prompt("Island", "yes").toLowerCase();
+  while(true) {
+    if (tempIsland === 'yes' || tempIsland === 'no' ) {
+        isIsland = (tempIsland === 'yes') ? true : false;
+        break;
+    }
+    tempIsland = prompt("Is island", "yes").toLowerCase();
+  }
+  console.log(language);
+  console.log(population);
+  console.log(isIsland);
+  if (language === 'english' 
+    && population < 50000000 && !isIsland) {
+    console.log(`You should live in  ${country}”`);
+  } else {
+    console.log(`${country} does not meet your criteria”`);
+  }
+  let compareAverage = (population > 33000000) ? 'above' : 'below';
+  console.log(`${country}'s population is ${compareAverage} average`);
+}
+</script>
+
+</body>
+</html>

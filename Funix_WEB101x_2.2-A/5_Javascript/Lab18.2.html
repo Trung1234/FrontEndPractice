@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=”UTF-8”>
+    <title>Page Title</title>
+   <script>
+        var myCountry = {
+            name:"Viet Nam",
+            population: 50000, 
+            language:"Vietnamese",
+            capital : "Ha Noi",
+            neighbours: [ 'Laos', 'Cambodia', 'China'] 
+        };
+        console.log(`${myCountry.name}  has ${myCountry.population}  ${myCountry.language} -speaking people, ${myCountry.neighbours.length} neighbouring'
+        +' countries and a capital called ${myCountry.capital} .`)
+        myCountry.population = myCountry.population + 200000000;
+        myCountry['population'] = myCountry['population'] - 200000000;
+        console.log('population: ',myCountry.population);
+    </script>
+</head>
+
+<body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+</body>
+
+</html>
