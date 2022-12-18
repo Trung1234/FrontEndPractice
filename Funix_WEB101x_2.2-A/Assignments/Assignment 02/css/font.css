@@ -3208,6 +3208,7 @@
 
 /* '' */
 .icon-tools:before {
+	height: 100px;
 	content: '\ea6c';
 }
 
