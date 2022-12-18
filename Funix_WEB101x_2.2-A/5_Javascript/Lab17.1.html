@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+
+
+<p id="demo"></p>
+
+<script>
+let country = 'Viet Nam';
+let capitalCity = 'Ha Noi';
+let population = 98170000;
+console.log(describeCountry(country, population, capitalCity));
+country = 'England';
+capitalCity = 'London';
+population = 981000;
+console.log(describeCountry(country, population, capitalCity));
+country = 'Japan';
+capitalCity = 'Tokyo';
+population = 981000;
+console.log(describeCountry(country, population, capitalCity));
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} people and its capital city is  ${capitalCity}”`;
+}
+</script>
+
+</body>
+</html>

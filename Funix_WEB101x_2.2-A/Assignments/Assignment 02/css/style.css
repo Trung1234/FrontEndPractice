@@ -98,10 +98,22 @@ section > .container{
     /* margin-left: 0px; */
 }
 
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
 ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: blue;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: 30px;
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  .now {
+    background-color: rgb(0, 119, 255);
+    border-radius: 12%;
+    padding: 5px;
+    color: white;
   }
