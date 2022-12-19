@@ -121,3 +121,22 @@ ul li::before {
   .timeline {
     margin-bottom: 7px;
   }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .hobby {
+    border-radius: 50%;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 20px;
+    font-size: large;
+  }

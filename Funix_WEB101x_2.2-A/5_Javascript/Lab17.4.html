@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+
+
+<p id="demo"></p>
+
+<script>
+    // Lab 17.3 arrow function
+    let country = 'Viet Nam';
+    let population = 917;
+   
+    const percentageOfWorld2 = function(population) {
+        return population*100/7900;
+    }
+    function percentageOfWorld1(population) {
+        return population*100/7900;
+    }
+    const percentageOfWorld3 = (population) => {
+        return population*100/7900;
+    }
+    const describePopulation = (country, population) => {
+        console.log(`${country}  has ${population} million, which is about ${percentageOfWorld1(population)}  of the world   .`)
+    }
+    describePopulation(country, population);
+    country = 'England';
+    population = 98;
+    describePopulation(country, population);
+    country = 'Japan';
+    population = 810;
+    describePopulation(country, population);
+</script>
+
+</body>
+</html>

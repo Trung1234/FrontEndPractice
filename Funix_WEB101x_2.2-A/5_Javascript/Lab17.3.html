@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+
+
+<p id="demo"></p>
+
+<script>
+    // Lab 17.3 arrow function
+    let populationOfVietNam = 981;
+    let populationOfSing= 81;
+    let populationOfLaos = 91;
+    const percentageOfWorld2 = function(population) {
+        return population*100/7900;
+    }
+    function percentageOfWorld1(population) {
+        return population*100/7900;
+    }
+    const percentageOfWorld3 = (population) => {
+        return population*100/7900;
+    }
+    console.log("---- percentageOfWorld1-------");
+    console.log("population Of VietNam :",percentageOfWorld1(populationOfVietNam));
+    console.log("population Of Sing :",percentageOfWorld1(populationOfSing));
+    console.log("population Of Laos :",percentageOfWorld1(populationOfLaos));
+    console.log("---- percentageOfWorld2-------");
+    console.log("population Of VietNam :",percentageOfWorld2(populationOfVietNam));
+    console.log("population Of Sing :",percentageOfWorld2(populationOfSing));
+    console.log("population Of Laos :",percentageOfWorld2(populationOfLaos));
+    console.log("---- percentageOfWorld3-------");
+    console.log("population Of VietNam :",percentageOfWorld3(populationOfVietNam));
+    console.log("population Of Sing :",percentageOfWorld3(populationOfSing));
+    console.log("population Of Laos :",percentageOfWorld3(populationOfLaos));
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+
+
+<p id="demo"></p>
+
+<script>
+    // Lab 17.6 array method
+    let country = 'Viet Nam';
+    let populations = [917,98, 111,810];
+    let neighbours = ['Laos', 'Thailand', 'China','Sweden']
+    neighbours.push('Utopia');
+    neighbours.pop();
+    if (!neighbours.includes('Germany')) {
+        console.log('Probably not a central European country :D');
+    }
+    function percentageOfWorld1(population) {
+        return population*100/7900;
+    }
+    let temp = Number(neighbours.indexOf('Sweden'));
+    if (temp >= 0) {
+        neighbours[temp] = 'Republic of Sweden';
+    }
+    console.log(neighbours);
+</script>
+
+</body>
+</html>
