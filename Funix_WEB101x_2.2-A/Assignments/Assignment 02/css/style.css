@@ -137,6 +137,18 @@ ul li::before {
     border-radius: 50%;
     border: 2px solid aqua;
     color: aqua;
-    padding: 20px;
+    padding: 25px;
     font-size: large;
   }
+
+  .certificate {
+    border: #d6c08d solid 1px;
+    float: left;
+    width: 49%;
+  }
+  .certificate> img {
+    width: 100%;
+    height: max-content;
+  }
+
+ 

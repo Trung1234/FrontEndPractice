@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=”UTF-8”>
+    <title>Page Title</title>
+   <script>
+        var myCountry = {
+            name:"Viet Nam",
+            population: 6, 
+            language:"vietnamese",
+            capital : "Ha Noi",
+            neighbours: [ 'Laos', 'Cambodia', 'China'] ,
+            describe : function() {
+                return this.name + " has "+population+" million "+this.language+" -speaking people, "
+                +this.neighbours.length+" neighbouring countries and a capital called " + this.capital;
+            },
+            checkIsland : function() {
+                return this.neighbours.length > 0 ? true : false;
+            }
+        };
+        console.log('describe: ',myCountry.describe());
+        console.log('checkIsland: ',myCountry.checkIsland());
+    </script>
+</head>
+
+<body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+</body>
+
+</html>

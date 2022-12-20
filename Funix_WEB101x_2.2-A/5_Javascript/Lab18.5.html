@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+
+
+<p id="demo"></p>
+
+<script>
+    // Lab 18.5 Lặp trong array, break và continue
+    let country = 'Viet Nam';
+    let populations = [917,98, 111,810];
+    let neighbours = ['Laos', 'Thailand', 'China','Sweden']
+
+    function percentageOfWorld1(population) {
+        return population*100/7900;
+    }
+    let percentages2 = [];
+    for (let i = 0;i < neighbours.length; i++){
+        percentages2.push(percentageOfWorld1(populations[i]));
+    }
+    
+    console.log('percentages2 : ',percentages2);
+</script>
+
+</body>
+</html>
