@@ -156,13 +156,19 @@ ul li::before {
   .certificate {
     border: #d6c08d solid 1px;
     float: left;
+    display: flex;
     width: 49%;
   }
   .certificate> img {
-    width: 100%;
+    width: 60%;
+    float: left;
     /* height: max-content; */
   }
-
+  .certificate > div {
+    width: 60%;
+    float: left;
+    /* height: max-content; */
+  }
   #footer {
     width: 100%;
     display: flex;
