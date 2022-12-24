@@ -7,25 +7,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/font.css">
+	<script src="https://kit.fontawesome.com/01f24c40cf.js" crossorigin="anonymous"></script>
 	<title>Assignment 02</title>
 </head>
 
 <body>
-
-
 	<section id="nav-bar">
 		<div class="dev">
 			<h1 class="name">Nguyễn Văn A</h1>
 			<span class="job">Full Stack Developer</span>
 		</div>
-
-		<img src="images/banner.jpg" alt="banner"  id="banner">
+		<img src="images/banner.jpg" alt="banner" id="banner">
 		<div id="nav-container">
-			<p><a href="#">thông tin &nbsp; <i class="fa-solid fa-user"></i></a></p>
-			<p><a href="#">lý lịch &nbsp;<i class="fa-solid fa-file"></i></a></p>
+			<p class="nav-border"><a href="#">thông tin &nbsp; <i class="fa-solid fa-user nar-icon"></i></a></p>
+			<p><a href="#">lý lịch &nbsp;<i class="fa-solid fa-file nar-icon"></i></a></p>
 			<div><a href="#"><img src="images/default-avatar.webp" id="avatar"></a></div>
-			<p><a href="#">chứng chỉ &nbsp;<i class="fa-solid fa-envelope"></i></a></p>
-			<p><a href="#">dự án &nbsp;<i class="fa-solid fa-star"></i></a></p>
+			<p class="nav-border"><a href="#">chứng chỉ &nbsp;<i class="fa-solid fa-envelope nar-icon"></i></a></p>
+			<p><a href="#">dự án &nbsp;<i class="fa-solid fa-star nar-icon"></i></a></p>
 		</div>
 	</section>
 
@@ -71,7 +69,7 @@
 				</div>
 
 				<div>
-					<ul>
+					<ul class="margin-ex ">
 						<li>
 							<div>
 								<p class="timeline">05/2022 ­- <span class="now">Hiện tại</span></p>
@@ -85,8 +83,8 @@
 						</li>
 						<li>
 							<div>
-								<p class="timeline">05/2022 ­- <span class="now">Hiện tại</span></p>
-								<p><b>Cong ty Y</b></p>
+								<p class="timeline">06/2021 - ­ 04/2022</p>
+								<p><b>Cong ty X</b></p>
 								<p>Full Stack Developer</p>
 								<p>- ­ Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có</p>
 								<p>- ­ Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL (MySQL,
@@ -97,7 +95,7 @@
 					</ul>
 				</div>
 			</div>
-			<div style="margin-top: 20px; display: inline-block; width: 32%; margin: 1%;">				
+			<div style="margin-top: 20px; display: inline-block; width: 32%; margin: 1%;">
 				<div style="display: flex;">
 					<div style="width: 75%;">
 						<h1>Kỹ năng</h1>
@@ -106,14 +104,19 @@
 						<i class="ic-tools-2 " style="font-size: xx-large;"></i>
 					</div>
 				</div>
-				<div >
+				<div>
 					<div>
-						<p>HTML, CSS</p>
-						<hr style="width: 60px;border: 1px solid #199cdb">
+						<p>HTML, CSS Fundamental</p>
+						<div>
+							<span class="level"></span>
+							<span class="level"></span>
+						</div>
 					</div>
 					<div>
-						<p>HTML, CSS</p>
-						<hr style="width: 60px;border: 1px solid #199cdb">
+						<p>Javascript Intermediate</p>
+						<div>
+							<span class="level"></span>
+						</div>
 					</div>
 					<div>
 						<p>HTML, CSS</p>
@@ -121,38 +124,39 @@
 							<span class="level"></span>
 							<span class="level"></span>
 						</div>
-						
-	
 					</div>
 					<div>
-						<p>HTML, CSS</p>
-	
-						<hr style="width: 60px;border: 1px solid #199cdb ; display: inline;
-							float: left;">
-						<hr style="margin-left: 20px; width: 60px;border: 1px solid #199cdb;
-						display: inline;float: left;">
-	
+						<p>NodeJS Intermediate</p>
+						<div>
+							<span class="level" style="height: 4px;"></span>
+							<span class="level" style="height: 4px;"></span>
+						</div>
 					</div>
-					
-					
-
+					<div>
+						<p>Bootstrap 5 Fundamental</p>
+						<div>
+							<span class="level" style="height: 3px;"></span>
+							<span class="level" style="height: 3px;"></span>
+						</div>
+					</div>
 				</div>
-				
-
-
 			</div>
 			<div style="margin-top: 20px; display: inline-block; width: 32%; margin: 1%;">
-				<div>
-					<h1>Ngôn ngữ</h1>
+				<div style="display: flex;">
+					<div style="width: 75%;">
+						<h1>Ngôn ngữ</h1>
+					</div>
+					<div style="width: 25%;">
+						<i class="ic-mic " style="font-size: xx-large;"></i>
+					</div>
 				</div>
 				<div>
-					<p>tiếng anh CSS</p>
+					<p>tiếng anh </p>
 					<div>
 						<span class="level"></span>
 						<span class="level"></span>
 					</div>
 					<p>N4</p>
-	
 					<div>
 						<span class="level" style="height: 5px;"></span>
 						<span class="level" style="height: 5px;"></span>
@@ -165,8 +169,15 @@
 	</section>
 	<section>
 		<div class="container">
-			<div style="margin-top: 20px; display: inline-block; width: 32%; margin: 1%;">
-				<h1>Hoạt động</h1>
+			<div style="margin-top: 20px; display: inline-block; width: 32%; margin: 1%;">			
+				<div style="display: flex;">
+					<div style="width: 75%;">
+						<h1>Hoạt động</h1>
+					</div>
+					<div style="width: 25%;">
+						<i class="ic-mic " style="font-size: xx-large;"></i>
+					</div>
+				</div>
 				<div>
 					<div class="child">
 						<p class="timeline">06/2021 ­ 04/2022</p>
@@ -179,7 +190,15 @@
 				</div>
 			</div>
 			<div tyle="margin-top: 20px; display: inline-block; width: 32%; margin: 1%;">
-				<h1>Sở thích</h1>
+			
+				<div style="display: flex;">
+					<div style="width: 75%;">
+						<h1>Sở thích</h1>
+					</div>
+					<div style="width: 25%;">
+						<i class="ic-mic " style="font-size: xx-large;"></i>
+					</div>
+				</div>
 				<div class="flex-container">
 					<div>
 						<i class="ic-megaphone hobby"></i>
@@ -187,20 +206,28 @@
 					</div>
 					<div>
 						<i class="ic-strategy hobby"></i>
-						<p> Âm nhạc</p>
+						<p> Chơi game</p>
 					</div>
 					<div>
 						<i class="ic-hotairballoon hobby"></i>
-						<p> Âm nhạc</p>
+						<p> Du lịch</p>
 					</div>
 					<div>
 						<i class="ic-basket hobby"></i>
-						<p> Âm nhạc</p>
+						<p> Nấu ăn</p>
 					</div>
 				</div>
 			</div>
 			<div tyle="margin-top: 20px; display: inline-block; width: 32%; margin: 1%;">
-				<h1>Học vấn</h1>
+				<div style="display: flex;">
+					<div style="width: 75%;">
+						<h1>Học vấn</h1>
+					</div>
+					<div style="width: 25%;">
+						<i class="ic-pencil " style="font-size: xx-large;"></i>
+					</div>
+				</div>
+				
 				<div>
 					<div class="child">
 						<p class="timeline">06/2021 - 05/2022</p>
@@ -216,7 +243,7 @@
 		</div>
 	</section>
 	<section id="certificate" class="bg-grey">
-		<div  >
+		<div>
 			<h1 class="section-title">
 				Chứng chỉ - Giải thưởng
 			</h1>
@@ -238,7 +265,7 @@
 						<p>- GPA: 8.6</p>
 					</div>
 				</div>
-				<div class="certificate" >
+				<div class="certificate">
 					<img src="images/Cert_WEB.png" alt="Girl in a jacket">
 					<div>
 						<h4>chung chi</h4>
@@ -246,25 +273,25 @@
 						<p>- GPA: 8.6</p>
 					</div>
 				</div>
-				<br> 
+				<br>
 			</div>
 		</div>
-		
+
 	</section>
 
 	<section id="project" style="display: inline-block; width: 100%;">
-		<div class="container" style="display: block;"> 
-			<div class="section-title" >
-				<h1 >
+		<div class="container" style="display: block;">
+			<div class="section-title">
+				<h1>
 					Dự án
 				</h1>
 			</div>
-			
-			<div class="projects"  >
+
+			<div class="projects">
 				<div class="project">
 					<img src="images/project_1.png" alt="Girl in a jacket">
 					<div class="project-title">
-						<p > cv ca nhan</p>
+						<p> cv cá nhân</p>
 					</div>
 					<div class="project-position">
 						<span class="now timeline">2021</span>
@@ -273,38 +300,101 @@
 							<span> FUNIX</span>
 						</div>
 						<div><i class="icon-lamp"></i>
-							<span> Developer</span></div>
+							<span> Developer</span>
+						</div>
 					</div>
 					<table class="project-content">
-
 						<tr>
-						  <td style="vertical-align: top;">Mô tả </td>
-						  <td>
-							Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong word
-						  </td>
+							<td>Mô tả </td>
+							<td>
+								Loooooooooooooooo
+								ooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooong word
+							</td>
 						</tr>
 						<tr>
-						  <td>Nhiệm vụ</td>
-						  <td>fffffffffffffffffffffffffffffffffffffffffff</td>
+							<td>Nhiệm vụ</td>
+							<td>fffffffffffffffffffffffffffffffffffffffffff</td>
 						</tr>
 						<tr>
 							<td>Công nghệ</td>
 							<td>fffffffffffffffffffffffffffffffffffffffffff</td>
-						  </tr>
-					  </table>
-					  
+						</tr>
+					</table>
 				</div>
 				<div class="project">
-					<img src="images/project_1.png" alt="Girl in a jacket">
-					<div>
-	
+					<img src="images/project_2.png" alt="Girl in a jacket">
+					<div class="project-title">
+						<p> web quản lý thú cưng</p>
 					</div>
+					<div class="project-position">
+						<span class="now timeline">2021</span>
+						<div>
+							<i class="icon-user"></i>
+							<span> FUNIX</span>
+						</div>
+						<div><i class="icon-lamp"></i>
+							<span> Developer</span>
+						</div>
+					</div>
+					<table class="project-content">
+						<tr>
+							<td>Mô tả </td>
+							<td>
+								Loooooooooooooooo
+								ooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooong word
+							</td>
+						</tr>
+						<tr>
+							<td>Nhiệm vụ</td>
+							<td>fffffffffffffffffffffffffffffffffffffffffff</td>
+						</tr>
+						<tr>
+							<td>Công nghệ</td>
+							<td>fffffffffffffffffffffffffffffffffffffffffff</td>
+						</tr>
+					</table>
 				</div>
 				<div class="project">
-					<img src="images/project_1.png" alt="Girl in a jacket">
-					<div>
-	
+					<img src="images/project_3.png" alt="Girl in a jacket">
+					<div class="project-title">
+						<p> web xem tin tức</p>
 					</div>
+					<div class="project-position">
+						<span class="now timeline">2021</span>
+						<div>
+							<i class="icon-user"></i>
+							<span> FUNIX</span>
+						</div>
+						<div><i class="icon-lamp"></i>
+							<span> Developer</span>
+						</div>
+					</div>
+					<table class="project-content">
+						<tr>
+							<td>Mô tả </td>
+							<td>
+								Loooooooooooooooo
+								ooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+								oooooooooooooooooooooooooooooooooooooong word
+							</td>
+						</tr>
+						<tr>
+							<td>Nhiệm vụ</td>
+							<td>fffffffffffffffffffffffffffffffffffffffffff</td>
+						</tr>
+						<tr>
+							<td>Công nghệ</td>
+							<td>fffffffffffffffffffffffffffffffffffffffffff</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -322,7 +412,7 @@
 			</div>
 			<div>
 				<i class="icon-github-circled " style="font-size: x-large; color: #199cdb;"></i>
-				<span>Github</span>		
+				<span>Github</span>
 			</div>
 		</div>
 	</section>

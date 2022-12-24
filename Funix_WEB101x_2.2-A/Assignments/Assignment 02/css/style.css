@@ -3,11 +3,19 @@
     padding: 0px;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 #avatar{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    border: #ffffff 4px solid;
+    border: #ffffff 5px solid;
+}
+
+.nar-icon {
+  color: #199cdb;
 }
 
 .level {
@@ -25,7 +33,6 @@
     vertical-align: middle;
     text-transform: uppercase;
     display: inline-flex;
-    background-color: antiquewhite;
     font-size: 15px;
 }
 .name {
@@ -41,6 +48,10 @@
     justify-content: center;
 }
 
+.nav-border {
+   border-left: 0.001px ridge rgb(194, 194, 194);
+   border-right: 0.001px ridge rgb(194, 194, 194);
+}
 #nav-container > div {
     flex: 40%;
     display: flex;
@@ -60,6 +71,10 @@
 
 .info {
     margin-top: 80px;
+}
+section {
+  font-family: sans-serif;
+  color: #373f47;
 }
 section > .container{
     display: flex;
@@ -97,8 +112,8 @@ section > .container{
     float: left;
     width: 40%;
     background-color: #f5f5f5;
-    margin-right: 2%;
-    margin-left: 10%;
+    margin-right: 8%;
+    margin-left: 10px;
 }
 
 #personal-info {
@@ -113,6 +128,9 @@ ul {
   list-style: none; /* Remove default bullets */
 }
 
+.margin-ex {
+  margin-left: 20px;
+}
 ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: blue;
@@ -182,8 +200,9 @@ ul li::before {
   }
   .project {
     float: left;
-    
+    padding: 10px;
     width: 33%;
+    border: 0.001px ridge rgb(194, 194, 194);
   }
   .project-title {
     font-family: sans-serif;
@@ -191,9 +210,10 @@ ul li::before {
     width: 100%;
     text-transform: uppercase;
   }
+
   .project-position {
-    padding: 10px;
     display: flex;
+    
   }
   .project > img {
     width: 100%;
@@ -208,16 +228,19 @@ ul li::before {
   }
   td {
     word-wrap: break-word;
-}
+    vertical-align: top;
+  }
   .project-content td, th{
     padding-left: 10px;
     padding-bottom: 5px;
-    border-bottom: 0.8px solid rgb(131, 124, 124);
+    border-top: 0.8px solid rgb(131, 124, 124);
   }
+
   #footer {
     width: 100%;
     display: flex;
     margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: center;
   }
 
