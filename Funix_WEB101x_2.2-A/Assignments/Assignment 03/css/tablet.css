@@ -4,4 +4,11 @@
   #nav-container > div {
       display: none;
     }
+    /* #nav-container p {
+      
+      width: 24%;
+    } */
+    .certificate> img {
+      width: 100%;
+    }
   }

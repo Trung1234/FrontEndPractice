@@ -132,9 +132,7 @@ ul {
   list-style: none; /* Remove default bullets */
 }
 
-.margin-ex {
-  margin-left: 20px;
-}
+
 ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: blue;
@@ -175,14 +173,9 @@ ul li::before {
     font-size: large;
   }
 
-  #certificate {
-    padding: 0% 2% 0% 2%;
-  }
+
   .certificate {
     border: #d6c08d solid 1px;
-    float: left;
-    display: flex;
-    width: 49%;
   }
 
   .certificate> img {
@@ -199,7 +192,7 @@ ul li::before {
     display: block;
     width: 100%;
   }
-  .projects {
+  /* .projects {
     display: flex;
   }
   .project {
@@ -207,7 +200,7 @@ ul li::before {
     padding: 10px;
     width: 33%;
     border: 0.001px ridge rgb(194, 194, 194);
-  }
+  } */
   .project-title {
     font-family: sans-serif;
     padding: 10px;
@@ -248,5 +241,7 @@ ul li::before {
     justify-content: center;
   }
 
- 
+  .contact {
+    justify-content: center;
+  }
   

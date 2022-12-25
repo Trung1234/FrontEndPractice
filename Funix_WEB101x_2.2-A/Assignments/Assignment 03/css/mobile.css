@@ -8,4 +8,14 @@
     #nav-container p {
         width: 100%;
       }
+    .cert-content {
+        text-align: start;
+    }
+    .contact-block {
+        width: 30% !important;
+    }
+    
+    .contact {
+        display: none;
+    }
     }
