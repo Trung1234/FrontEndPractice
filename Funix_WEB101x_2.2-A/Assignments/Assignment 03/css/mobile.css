@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 468px) {
+
+    #nav-container  {
+        display: block;
+        height: max-content;
+      }
+    #nav-container p {
+        width: 100%;
+      }
+    }
