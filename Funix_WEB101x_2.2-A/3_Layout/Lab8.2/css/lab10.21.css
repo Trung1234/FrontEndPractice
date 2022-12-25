@@ -19,6 +19,10 @@ body {
     width: 825px;
     margin: 50px auto;
     position: relative;
+
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    column-gap: 40px;
 }
 
 .product-img img{
@@ -75,6 +79,7 @@ body {
     text-transform: uppercase;
     padding: 15px;
     background-color: #f7f7f7;
+    grid-column:  1 /-1;
 }
 
 .product-info {
@@ -151,6 +156,7 @@ body {
     padding: 15px;
     width: 100%;
     border-top: 4px solid black;
+    grid-column:  1 /-1;
 }
 
 .add-cart:hover {
