@@ -20,4 +20,31 @@ function logSubmit() {
     
     // event.preventDefault();
   }
+
+  function myFunction() {
+    var moreText = document.getElementById("experience-content");
+    var btnText = document.getElementById("myBtn");
   
+    if (moreText.style.display === "inline") {
+      btnText.innerHTML = "+ View more"; 
+      moreText.style.display = "none";
+    } else {
+      btnText.innerHTML = "+ View  less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  
+  $( "experience" ).hover(
+    function() {
+        document.getElementById("myBtn").style.display = "block";
+    }, function() {
+        document.getElementById("myBtn").style.display = "none";
+    }
+  );
+  function showBtn() {
+    document.getElementById("myBtn").style.display = "block";
+  }
+  function hideBtn() {
+    document.getElementById("myBtn").style.display = "none";
+  }
+

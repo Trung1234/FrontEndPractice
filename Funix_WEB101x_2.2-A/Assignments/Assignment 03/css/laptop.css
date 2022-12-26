@@ -129,7 +129,12 @@ font-family: sans-serif;
     /* margin-left: 0px; */
 }
 
-
+/* #myBtn {
+  display: none;
+} */
+#experience-content {
+  display: none;
+}
 
 .triger-ex {
   display: none;
