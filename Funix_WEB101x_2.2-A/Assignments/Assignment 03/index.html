@@ -30,7 +30,7 @@
 	</section>
 	<section id="about" class="bg-grey">
 		<div class="container info ">
-			<div class="row p-1 m-1">
+			<div class="row p-1 m-1" >
 				<div id="target" class="col-sm-12 col-lg-6 ">
 					<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
 					<div class="clearfix visible-xs">
@@ -43,7 +43,18 @@
 						bản thân, cũng như hoàn thành tốt nhất công việc được giao.
 					</div>
 				</div>
-				<div id="personal-info" class="col-sm-12 col-lg-6">
+				<div id="input-info" class="col-sm-12 col-lg-6">
+					<form id="formPersonal">
+						<div class="mb-3">
+						  <label for="exampleInputEmail1" class="form-label">Email address</label>
+						  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+						  <div id="emailHelp" class="form-text">hãy nhập mail của bạn</div>
+						  <span class="text-danger" id="error"></span>
+						</div>
+						<button t class="btn btn-primary" onclick="logSubmit()">Submit</button>
+					  </form>
+				</div>
+				<div id="personal-info" class="col-sm-12 col-lg-6" style="display: none;">
 					<h1 class="section-title">Thông tin cá nhân</h1>
 					<p><b>Giới tính</b> : Nam</p>
 					<p><b>Ngày sinh</b> : 19/05/2000</p>
@@ -304,7 +315,7 @@
 				</h1>
 			</div>
 			<div class="projects row p-1 m-1">
-				<div class="project col-xs-12 col-sm-12 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-lg-4 border border-secondary">
 					<img src="images/project_1.png" alt="Girl in a jacket">
 					<div class="project-title">
 						<p> cv cá nhân</p>
@@ -316,9 +327,9 @@
 								<i class="icon-user"></i>
 								<span> FUNIX</span>
 							</div>
-							<div class="col-xs-12 col-sm-12 col-lg-6">
-								<i class="icon-lamp"></i>
-								<span> Developer</span>
+							<div class="col-xs-12 col-sm-12 col-lg-6 d-inline-block">
+								<p><i class="icon-lamp"></i><span> Developer</span></p>
+								
 							</div>
 						</div>					
 					</div>
@@ -341,7 +352,7 @@
 					</table>
 				</div>
 				
-				<div class="project col-xs-12 col-sm-12 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-lg-4 border border-secondary">
 					<img src="images/project_2.png" alt="Girl in a jacket">
 					<div class="project-title">
 						<p> web quản lý thú cưng</p>
@@ -353,7 +364,7 @@
 								<i class="icon-user"></i>
 								<span> FUNIX</span>
 							</div>
-							<div class="col-xs-12 col-sm-12 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-lg-6 d-inline">
 								<i class="icon-lamp"></i>
 								<span> Developer</span>
 							</div>
@@ -377,7 +388,7 @@
 						</tr>
 					</table>
 				</div>
-				<div class="project col-xs-12 col-sm-12 col-lg-4">
+				<div class="project col-xs-12 col-sm-12 col-lg-4 border border-secondary">
 					<img src="images/project_3.png" alt="Girl in a jacket">
 					<div class="project-title">
 						<p> web xem tin tức</p>
@@ -389,7 +400,7 @@
 								<i class="icon-user"></i>
 								<span> FUNIX</span>
 							</div>
-							<div class="col-xs-12 col-sm-12 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-lg-6 d-inline">
 								<i class="icon-lamp"></i>
 								<span> Developer</span>
 							</div>
@@ -431,6 +442,7 @@
 			</div>
 		</div>
 	</section>
+	<script src="js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

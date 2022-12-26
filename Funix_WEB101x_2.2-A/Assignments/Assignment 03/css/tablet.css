@@ -11,4 +11,7 @@
     .certificate> img {
       width: 100%;
     }
+    .project {
+      margin: 10px;
+    }
   }
