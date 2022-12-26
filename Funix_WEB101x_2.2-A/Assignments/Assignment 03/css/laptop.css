@@ -91,6 +91,7 @@ section {
   font-size: 15px;
 }
 .name {
+  text-align: center;
 font-family: sans-serif;
 }
 
@@ -126,6 +127,17 @@ font-family: sans-serif;
     width: 40%; */
     /* margin-right: 10%; */
     /* margin-left: 0px; */
+}
+
+
+
+.triger-ex {
+  display: none;
+}
+
+.viewmore-ex +  .triger-ex {
+  display: block;
+  background-color: #d6c08d;
 }
 
 ul {
@@ -173,21 +185,23 @@ ul li::before {
     font-size: large;
   }
 
-
+ .job {
+  text-align: center;
+ }
   .certificate {
     border: #d6c08d solid 1px;
   }
 
-  .certificate> img {
-    width: 60%;
+  /* .certificate> img {
+    width: 100%;
     float: left;
-  }
-
+  } */
+/* 
   .certificate > div {
     width: 60%;
     float: left;
     /* height: max-content; */
-  }
+  
   .section-title {
     display: block;
     width: 100%;
@@ -241,7 +255,13 @@ ul li::before {
     justify-content: center;
   }
 
-  .contact {
-    justify-content: center;
+  .contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-contact {
+    font-size: x-large;
+     color: #199cdb;
   }
   

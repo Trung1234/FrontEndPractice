@@ -11,11 +11,10 @@
     .cert-content {
         text-align: start;
     }
-    .contact-block {
-        width: 30% !important;
-    }
-    
     .contact {
         display: none;
+    }
+    .icon-contact {
+        font-size: xx-large;
     }
     }
