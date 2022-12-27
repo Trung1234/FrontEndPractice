@@ -52,7 +52,7 @@
 						  <div id="emailHelp" class="form-text">hãy nhập mail để xác thực</div>
 						  <span class="text-danger" id="error"></span>
 						</div>
-						<button t class="btn btn-primary" onclick="logSubmit()">Submit</button>
+						<button t class="btn btn-primary" onclick=" return logSubmit()">Submit</button>
 					  </form>
 				</div>
 				<div id="personal-info" class="col-sm-12 col-lg-6" style="display: none;">
@@ -77,16 +77,16 @@
 	<section id="job-info">
 		<div class="container">
 			<div class="row p-1 m-1">
-				<div class="col-xs-12 col-sm-6 col-lg-4">
-					<div style="display: flex;" id="experience">
+				<div class="col-xs-12 col-sm-6 col-lg-4" >
+					<div style="display: flex;">
 						<div style="width: 75%;">
-							<h1>Kinh nghiệm</h1>
+							<h1 >Kinh nghiệm</h1>
 						</div>
 						<div style="width: 25%;">
 							<i class="ic-toolbox " style="font-size: xx-large;"></i>
 						</div>
 					</div>
-					<div  onmouseover="showBtn()" onmouseout="hideBtn()">
+					<div  id="experience" class="test">
 						<div id="experience-content">
 							<ul >
 								<li>
@@ -111,7 +111,7 @@
 								</li>
 							</ul>
 						</div>
-						<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-primary">+ View more</button>
+						<button onclick="viewMoreAndLess('myBtn', 'experience-content')" id="myBtn" type="button" class="btn btn-primary">+ View more</button>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-lg-4">
@@ -138,13 +138,6 @@
 							</div>
 						</div>
 						<div>
-							<p>HTML, CSS</p>
-							<div>
-								<span class="level"></span>
-								<span class="level"></span>
-							</div>
-						</div>
-						<div>
 							<p>NodeJS Intermediate</p>
 							<div>
 								<span class="level" style="height: 4px;"></span>
@@ -160,7 +153,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="col-xs-12 col-sm-6 col-lg-4" >
 					<div style="display: flex;">
 						<div style="width: 75%;">
 							<h1>Ngôn ngữ</h1>
@@ -169,20 +162,24 @@
 							<i class="ic-mic " style="font-size: xx-large;"></i>
 						</div>
 					</div>
-					<div>
-						<p>Tiếng anh : IELTS 7.0</p>
-						<div>
-							<span class="level"></span>
-							<span class="level"></span>
-							<span class="level"></span>
+					<div id="lang">
+						<div id="lang-content"> 
+							<p>Tiếng anh : IELTS 7.0</p>
+							<div>
+								<span class="level"></span>
+								<span class="level"></span>
+								<span class="level"></span>
+							</div>
+							<p>Tiếng nhật: N4</p>
+							<div>
+								<span class="level" style="height: 5px;"></span>
+								<span class="level" style="height: 5px;"></span>
+							</div>
 						</div>
-						<p>Tiếng nhật: N4</p>
-						<div>
-							<span class="level" style="height: 5px;"></span>
-							<span class="level" style="height: 5px;"></span>
-						</div>
+						<button onclick="viewMoreAndLess('myBtnLang', 'lang-content')" id="myBtnLang" type="button" class="btn btn-primary">+ View more</button>
 					</div>
 				</div>
+				
 			</div>							
 		</div>
 	</section>
@@ -198,15 +195,19 @@
 							<i class="ic-mic " style="font-size: xx-large;"></i>
 						</div>
 					</div>
-					<div>
-						<div class="child">
-							<p class="timeline">06/2021 - 04/2022</p>
+					<div id="activity">
+						<div id="activity-content">
+							<div class="child">
+								<p class="timeline">06/2021 - 04/2022</p>
+							</div>
+							<div class="child-three">
+								<p><b>FPT Edu Hackathon 2019</b></p>
+								<p>Giải 3 bảng A</p>
+								<p>Đề tài: Trang web về phân loại rác thải.</p>
+							</div>
 						</div>
-						<div class="child-three">
-							<p><b>FPT Edu Hackathon 2019</b></p>
-							<p>Giải 3 bảng A</p>
-							<p>Đề tài: Trang web về phân loại rác thải.</p>
-						</div>
+						<button onclick="viewMoreAndLess('myBtnActivity', 'activity-content')" id="myBtnActivity" 
+						type="button" class="btn btn-primary">+ View more</button>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-lg-4">		
@@ -273,7 +274,7 @@
 							<img src="images/Cert_DBI.png" alt="Girl in a jacket" width="100%">
 						</div>
 						<div class="cert-content col-sm-12 col-lg-4 p-1">
-							<h6>CHỨNG CHỈ LẬP TRÌNH WEB -­ FUNIX</h6>
+							<h6 class="fw-bold">CHỨNG CHỈ LẬP TRÌNH WEB -­ FUNIX</h6>
 							<p>- CCDN</p>
 							<p>- GPA: 8.6</p>
 						</div>
@@ -285,7 +286,7 @@
 							<img src="images/Cert_PRF.png" alt="Girl in a jacket" width="100%">
 						</div>
 						<div class="cert-content col-sm-12 col-lg-4">
-							<h6>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - ­ FUNIX</h6>
+							<h6 class="fw-bold">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - ­ FUNIX</h6>
 							<p>- CCDN</p>
 							<p>- GPA: 8.6</p>
 						</div>
@@ -297,7 +298,7 @@
 							<img src="images/Cert_WEB.png" alt="Girl in a jacket" width="100%">
 						</div>
 						<div class="cert-content col-sm-12 col-lg-4">
-							<h6>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - ­ FUNIX</h6>
+							<h6 class="fw-bold">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - ­ FUNIX</h6>
 							<p>- CCDN</p>
 							<p>- GPA: 8.6</p>
 						</div>
@@ -315,8 +316,8 @@
 					Dự án
 				</h1>
 			</div>
-			<div class="projects row p-1 m-1">
-				<div class="project col-xs-12 col-sm-12 col-lg-4 border border-secondary">
+			<div class="projects row p-1 m-1 g-2">
+				<div class="project col-xs-12 col-sm-12 col-lg-4">
 					<img src="images/project_1.png" alt="Girl in a jacket">
 					<div class="project-title">
 						<p> cv cá nhân</p>
@@ -353,7 +354,7 @@
 					</table>
 				</div>
 				
-				<div class="project col-xs-12 col-sm-12 col-lg-4 border border-secondary">
+				<div class="project col-xs-12 col-sm-12 col-lg-4 ">
 					<img src="images/project_2.png" alt="Girl in a jacket">
 					<div class="project-title">
 						<p> web quản lý thú cưng</p>
@@ -389,7 +390,7 @@
 						</tr>
 					</table>
 				</div>
-				<div class="project col-xs-12 col-sm-12 col-lg-4 border border-secondary">
+				<div class="project col-xs-12 col-sm-12 col-lg-4">
 					<img src="images/project_3.png" alt="Girl in a jacket">
 					<div class="project-title">
 						<p> web xem tin tức</p>

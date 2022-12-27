@@ -14,6 +14,13 @@
     .contact {
         display: none;
     }
+    .certificate {
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom: 0.04x salmon ridge;
+        margin-bottom: 15px;
+    }
     .icon-contact {
         font-size: xx-large;
     }

@@ -17,13 +17,12 @@ function logSubmit() {
        }
     }
     document.getElementById('error').innerHTML = error;
-    
-    // event.preventDefault();
+    return false;
   }
 
-  function myFunction() {
-    var moreText = document.getElementById("experience-content");
-    var btnText = document.getElementById("myBtn");
+  function viewMoreAndLess(idBtn, idContent) {
+    var moreText = document.getElementById(idContent);
+    var btnText = document.getElementById(idBtn);
   
     if (moreText.style.display === "inline") {
       btnText.innerHTML = "+ View more"; 
@@ -34,17 +33,4 @@ function logSubmit() {
     }
   }
   
-  $( "experience" ).hover(
-    function() {
-        document.getElementById("myBtn").style.display = "block";
-    }, function() {
-        document.getElementById("myBtn").style.display = "none";
-    }
-  );
-  function showBtn() {
-    document.getElementById("myBtn").style.display = "block";
-  }
-  function hideBtn() {
-    document.getElementById("myBtn").style.display = "none";
-  }
 

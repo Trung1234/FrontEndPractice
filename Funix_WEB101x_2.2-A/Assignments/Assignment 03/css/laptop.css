@@ -4,29 +4,73 @@
 }
 
 body {
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
+}
+
+#myBtn {
+    display: none;
+}
+.test {
+  padding-bottom: 50px;
+  transition: all 0.5s;
+}
+.test:hover #myBtn {
+    display: block;
+    transform: translateX(-50);
 }
 
 
+#lang-content {
+  display: none;
+}
+
+#myBtnLang {
+  display: none;
+}
+#lang {
+padding-bottom: 50px;
+transition: all 0.5s;
+}
+#lang:hover #myBtnLang {
+  display: block;
+  transform: translateX(-50);
+}
+
+#activity-content {
+  display: none;
+}
+
+#myBtnActivity {
+  display: none;
+}
+
+#activity {
+padding-bottom: 50px;
+transition: all 0.5s;
+}
+#activity:hover #myBtnActivity {
+  display: block;
+  transform: translateX(-50);
+}
 
 .nar-icon {
-  color: #199cdb;
+    color: #199cdb;
 }
 
 .level {
-  background: #199cdb;
-  display: inline-block;
-  height: 2px;
-  margin-right: 10px;
-  width: 45px;
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
 }
-
 
 .nav-border {
-   border-left: 0.001px ridge rgb(194, 194, 194);
-   border-right: 0.001px ridge rgb(194, 194, 194);
+    border-left: 0.001px ridge rgb(194, 194, 194);
+    border-right: 0.001px ridge rgb(194, 194, 194);
 }
-#nav-container > div {
+
+#nav-container>div {
     flex: 40%;
     display: flex;
     align-items: center;
@@ -47,10 +91,13 @@ body {
     margin-top: 14px;
     padding: 3px;
 }
+
 section {
-  font-family: sans-serif;
-  color: #373f47;
+    font-family: sans-serif;
+    color: #373f47;
 }
+
+
 /* section > .container{
     display: flex;
     padding: 0% 2% 0% 2%;
@@ -58,50 +105,55 @@ section {
 } */
 
 #banner {
-    width: 100%;   
-    background-color: #252222; /* Used if the image is unavailable */
-    height: 400px; /* You must set a specified height */
+    width: 100%;
+    background-color: #252222;
+    /* Used if the image is unavailable */
+    height: 400px;
+    /* You must set a specified height */
 }
+
 .bg-grey {
- background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
-#avatar{
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  border: #ffffff 5px solid;
+
+#avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: #ffffff 5px solid;
 }
+
 #target {
-  /* text-align: left; */
-  padding: 10px;
-  /* float: left;
+    /* text-align: left; */
+    padding: 10px;
+    /* float: left;
   width: 40%; */
-  /* background-color: #f5f5f5; */
-  /* margin-right: 8%;
+    /* background-color: #f5f5f5; */
+    /* margin-right: 8%;
   margin-left: 10px; */
 }
 
 #nav-container {
-  width: 100%;
-  height: 50px;
-  background-color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  display: inline-flex;
-  font-size: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: inline-flex;
+    font-size: 15px;
 }
+
 .name {
-  text-align: center;
-font-family: sans-serif;
+    text-align: center;
+    font-family: sans-serif;
 }
 
-
-#nav-container > p {
-  flex: 15%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#nav-container>p {
+    flex: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dev {
@@ -112,106 +164,106 @@ font-family: sans-serif;
     transform: translate(-50%, -50%);
 }
 
+
 /* #nav-bar {
     text-align: center;
 } */
 
-
-
-
-
-
 #personal-info {
-  padding: 10px;
+    padding: 10px;
     /* float: left;
     width: 40%; */
     /* margin-right: 10%; */
     /* margin-left: 0px; */
 }
 
+
 /* #myBtn {
   display: none;
 } */
+
 #experience-content {
-  display: none;
-}
-
-.triger-ex {
-  display: none;
-}
-
-.viewmore-ex +  .triger-ex {
-  display: block;
-  background-color: #d6c08d;
+    display: none;
 }
 
 ul {
-  list-style: none; /* Remove default bullets */
+    list-style: none;
+    /* Remove default bullets */
 }
 
-
 ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: blue;
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
 
-  .now {
+.now {
     background-color: rgb(0, 119, 255);
     border-radius: 12%;
     padding: 5px;
     color: white;
-  }
+}
 
-  .timeline {
+.timeline {
     margin-bottom: 7px;
-  }
+}
 
-  .flex-container {
+.flex-container {
     display: flex;
     flex-wrap: nowrap;
     margin: 10px 5px;
-  }
-  
-  .flex-container > div {
+}
+
+.flex-container>div {
     width: 100px;
     margin: 10px;
     text-align: center;
-  }
+}
 
-  .hobby {
+.hobby {
     border-radius: 50%;
     border: 2px solid aqua;
     color: aqua;
     padding: 25px;
     font-size: large;
-  }
+}
 
- .job {
-  text-align: center;
- }
-  .certificate {
+.job {
+    text-align: center;
+}
+
+.certificate {
     border: #d6c08d solid 1px;
-  }
+}
 
-  /* .certificate> img {
+
+/* .certificate> img {
     width: 100%;
     float: left;
   } */
+
+
 /* 
   .certificate > div {
     width: 60%;
     float: left;
     /* height: max-content; */
-  
-  .section-title {
+
+.section-title {
     display: block;
     width: 100%;
-  }
-  /* .projects {
+}
+
+
+/* .projects {
     display: flex;
   }
   .project {
@@ -220,53 +272,58 @@ ul li::before {
     width: 33%;
     border: 0.001px ridge rgb(194, 194, 194);
   } */
-  .project-title {
+
+.project-title {
     font-family: sans-serif;
     padding: 10px;
     width: 100%;
     text-transform: uppercase;
-  }
+}
 
-  .project-position {
+.project-position {
     display: flex;
-    
-  }
-  .project > img {
+}
+
+.project>img {
     width: 100%;
-  }
-  .project-content {
+}
+
+.project-content {
     padding: 10px;
-  }
-  table {
+}
+
+table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
-  }
-  td {
+}
+
+td {
     word-wrap: break-word;
     vertical-align: top;
-  }
-  .project-content td, th{
+}
+
+.project-content td,
+th {
     padding-left: 10px;
     padding-bottom: 5px;
     border-top: 0.8px solid rgb(131, 124, 124);
-  }
+}
 
-  #footer {
+#footer {
     width: 100%;
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
-  }
+}
 
-  .contacts {
+.contacts {
     display: flex;
     align-items: center;
-  }
+}
 
-  .icon-contact {
+.icon-contact {
     font-size: x-large;
-     color: #199cdb;
-  }
-  
+    color: #199cdb;
+}
