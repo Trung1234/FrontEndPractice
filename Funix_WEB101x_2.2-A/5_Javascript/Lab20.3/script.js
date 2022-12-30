@@ -44,3 +44,19 @@ document.querySelector('.check').addEventListener('click', function () {
    console.log(guess, typeof guess);
 })
 
+// event when click on again button
+document.querySelector('.again').addEventListener('click', function () {
+    score = 20;
+    // reset secret number
+    random = Math.floor(Math.random() * 20) + 1;
+  
+    displayMessage('Start guessing...');
+    // reset css
+    document.querySelector('.score').textContent = score;
+    document.querySelector('.number').textContent = '?';
+    document.querySelector('.guess').value = '';
+  
+    document.querySelector('body').style.backgroundColor = '#222';
+    document.querySelector('.number').style.width = '15rem';
+  });
+  
