@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+
+
+<p id="demo"></p>
+
+<script>
+    // Lab 16.6.1. Đội nào chiến thắng? (phần 1)
+    let dolphins = [96, 108 , 89 ];
+    let koalas  = [88, 91, 110];
+    let dolphinsAvg =  dolphins.reduce((a, b) => a + b, 0) / dolphins.length;
+    let koalasAvg =  koalas.reduce((a, b) => a + b, 0) / koalas.length;
+    if (dolphinsAvg > koalasAvg) {
+        console.log("dolphins win");
+    }else if (dolphinsAvg < koalasAvg) {
+        console.log("koalas win");
+    }  else {
+        console.log("Draw");
+    }
+
+     // Lab 16.6.2. Tip calculator (phần 1)
+
+    let bills = [ 275, 40 , 430];
+    let totals = [];
+    let tips = [];
+    bills.forEach(element => {
+        let tip = (element >= 50 && element <= 300) ? element*0.15 : element*0.2;
+        tips.push(tip);
+    });
+    bills.forEach(element => {
+        let total = element + tips[bills.indexOf(element)];
+        console.log(`The bill was ${element}, the tip was (${tips[bills.indexOf(element)]})`
+        +`, and the total value ${total}`);
+        totals.push(total);
+    });
+
+
+</script>
+
+</body>
+</html>

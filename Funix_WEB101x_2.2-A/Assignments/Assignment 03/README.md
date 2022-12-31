@@ -1,6 +1,7 @@
 
 ```
-Assignment 02 Stater
+path: https://trung1234.github.io/DigitalCV/
+Assignment 03 
 ├─ css
 │  ├─ font.css
 │  └─ style.css

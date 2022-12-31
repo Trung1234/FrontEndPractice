@@ -1,25 +1,135 @@
+/* reset css */
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
+}
+
+section {
+  font-family: sans-serif;
+  color: #373f47;
+}
+
+.nar-icon {
+  color: #199cdb;
+}
+
+.level {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.nav-border {
+  border-left: 0.001px ridge rgb(194, 194, 194);
+  border-right: 0.001px ridge rgb(194, 194, 194);
+}
+
+#nav-container > div {
+  flex: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-container p a {
+  color: #111111;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.info {
+  margin-top: 14px;
+  padding: 3px;
+}
+
+/* navigation section  */
+#banner {
+  width: 100%;
+  background-color: #252222;
+  height: 500px;
+}
+
+.bg-grey {
+  background-color: #f5f5f5;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: #ffffff 5px solid;
+}
+
+#target {
+  padding: 10px;
+}
+
+#nav-container {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  display: inline-flex;
+  font-size: 15px;
+}
+
+.name {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#nav-container > p {
+  flex: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+/* end navigation section  */
+
+#personal-info {
+  padding: 10px;
+}
+
+/* experience section */
+#experience-content {
+  display: none;
 }
 
 #myBtn {
-    display: none;
+  display: none;
 }
 .test {
   padding-bottom: 50px;
   transition: all 0.5s;
 }
 .test:hover #myBtn {
-    display: block;
-    transform: translateX(-50);
+  display: block;
+  transform: translateX(-50);
 }
+/* end experience section */
 
-
+/* language section */
 #lang-content {
   display: none;
 }
@@ -28,14 +138,17 @@ body {
   display: none;
 }
 #lang {
-padding-bottom: 50px;
-transition: all 0.5s;
+  padding-bottom: 50px;
+  transition: all 0.5s;
 }
 #lang:hover #myBtnLang {
   display: block;
   transform: translateX(-50);
 }
 
+/* end language section */
+
+/* activity section */
 #activity-content {
   display: none;
 }
@@ -45,285 +158,198 @@ transition: all 0.5s;
 }
 
 #activity {
-padding-bottom: 50px;
-transition: all 0.5s;
+  padding-bottom: 50px;
+  transition: all 0.5s;
 }
 #activity:hover #myBtnActivity {
   display: block;
   transform: translateX(-50);
 }
+/* end activity section */
 
-.nar-icon {
-    color: #199cdb;
-}
-
-.level {
-    background: #199cdb;
-    display: inline-block;
-    height: 2px;
-    margin-right: 10px;
-    width: 45px;
-}
-
-.nav-border {
-    border-left: 0.001px ridge rgb(194, 194, 194);
-    border-right: 0.001px ridge rgb(194, 194, 194);
-}
-
-#nav-container>div {
-    flex: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#nav-container p a {
-    color: #111111;
-    text-align: center;
-    text-decoration: none;
-}
-
-.bg-grey {
-    background: #f7f7f7;
-}
-
-.info {
-    margin-top: 14px;
-    padding: 3px;
-}
-
-section {
-    font-family: sans-serif;
-    color: #373f47;
-}
-
-
-/* section > .container{
-    display: flex;
-    padding: 0% 2% 0% 2%;
-    align-items: stretch;
-} */
-
-#banner {
-    width: 100%;
-    background-color: #252222;
-    /* Used if the image is unavailable */
-    height: 400px;
-    /* You must set a specified height */
-}
-
-.bg-grey {
-    background-color: #f5f5f5;
-}
-
-#avatar {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: #ffffff 5px solid;
-}
-
-#target {
-    /* text-align: left; */
-    padding: 10px;
-    /* float: left;
-  width: 40%; */
-    /* background-color: #f5f5f5; */
-    /* margin-right: 8%;
-  margin-left: 10px; */
-}
-
-#nav-container {
-    width: 100%;
-    height: 50px;
-    background-color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-    display: inline-flex;
-    font-size: 15px;
-}
-
-.name {
-    text-align: center;
-    font-family: sans-serif;
-}
-
-#nav-container>p {
-    flex: 15%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dev {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-}
-
-
-/* #nav-bar {
-    text-align: center;
-} */
-
-#personal-info {
-    padding: 10px;
-    /* float: left;
-    width: 40%; */
-    /* margin-right: 10%; */
-    /* margin-left: 0px; */
-}
-
-
-/* #myBtn {
-  display: none;
-} */
-
-#experience-content {
+/* skill section */
+#skill-content {
     display: none;
-}
+  }
+  
+  #myBtnSkill {
+    display: none;
+  }
+  
+  #skill {
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
 
-ul {
-    list-style: none;
-    /* Remove default bullets */
-}
+  #skill:hover #myBtnSkill {
+    display: block;
+    transform: translateX(-50);
+  }
+  /* end skill section */
 
-ul li::before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: blue;
-    font-weight: bold;
-    /* If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: 1em;
-    /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
-    /* Also needed for space (tweak if needed) */
-}
 
-.now {
-    background-color: rgb(0, 119, 255);
-    border-radius: 12%;
-    padding: 5px;
-    color: white;
-}
-
-.timeline {
-    margin-bottom: 7px;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 10px 5px;
-}
-
-.flex-container>div {
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-}
-
+/* hobbies section */
 .hobby {
     border-radius: 50%;
     border: 2px solid aqua;
     color: aqua;
     padding: 25px;
     font-size: large;
+  }
+
+#hobbies-content {
+    display: none;
+  } 
+  
+   #myBtnHobbies {
+    display: none;
+  }
+
+  #hobbies {
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
+
+  #hobbies:hover #myBtnHobbies {
+    display: block;
+    transform: translateX(-50);
+  }
+  /* end hobbies section */
+
+  
+
+/* study section */
+
+#study-content {
+    display: none;
+  } 
+  
+   #myBtnStudy {
+    display: none;
+  }
+
+  #study {
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
+
+  #study:hover #myBtnStudy {
+    display: block;
+    transform: translateX(-50);
+  }
+  /* end hobbies section */
+
+ul {
+  list-style: none;
+  /* Remove default bullets */
 }
 
+ul li::before {
+  content: "\2022";
+  color: blue;
+  font-weight: bold;
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+.now {
+  background-color: rgb(0, 119, 255);
+  border-radius: 12%;
+  padding: 5px;
+  color: white;
+}
+
+.timeline {
+  margin-bottom: 7px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 5px;
+}
+
+.flex-container > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+
 .job {
-    text-align: center;
+  text-align: center;
 }
 
 .certificate {
-    border: #d6c08d solid 1px;
+  border: #d6c08d solid 1px;
 }
-
-
-/* .certificate> img {
-    width: 100%;
-    float: left;
-  } */
-
-
-/* 
-  .certificate > div {
-    width: 60%;
-    float: left;
-    /* height: max-content; */
 
 .section-title {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
-
-/* .projects {
-    display: flex;
-  }
-  .project {
-    float: left;
-    padding: 10px;
-    width: 33%;
-    border: 0.001px ridge rgb(194, 194, 194);
-  } */
-
+/* project section */
 .project-title {
-    font-family: sans-serif;
-    padding: 10px;
-    width: 100%;
-    text-transform: uppercase;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .project-position {
-    display: flex;
+  display: flex;
 }
 
-.project>img {
-    width: 100%;
+.project > img {
+  width: 100%;
 }
 
 .project-content {
-    padding: 10px;
+  padding: 10px;
 }
 
 table {
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 }
 
 td {
-    word-wrap: break-word;
-    vertical-align: top;
+  word-wrap: break-word;
+  vertical-align: top;
 }
 
 .project-content td,
 th {
-    padding-left: 10px;
-    padding-bottom: 5px;
-    border-top: 0.8px solid rgb(131, 124, 124);
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-top: 0.8px solid rgb(131, 124, 124);
 }
 
+/* end project section */
+
+/* footer section */
 #footer {
-    width: 100%;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon-contact {
-    font-size: x-large;
-    color: #199cdb;
+  font-size: x-large;
+  color: #199cdb;
 }
+/* end  footer section */

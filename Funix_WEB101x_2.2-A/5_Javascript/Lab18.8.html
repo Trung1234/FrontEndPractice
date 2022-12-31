@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+
+
+
+<p id="demo"></p>
+
+<script>
+    // Lab 18.8.1
+    const markMiller = {
+        fullName: "Mark Miller",
+        mass : 78,
+        height        : 1.69,
+        calcBMI  : function() {
+            return this.mass/(this.height*this.height);
+        }
+    };
+
+    const johnSmith = {
+        fullName: " John Smith",
+        mass : 92,
+        height        : 1.95,
+        calcBMI  : function() {
+            return this.mass/(this.height*this.height);
+        }
+    };
+    if (johnSmith.calcBMI() > markMiller.calcBMI()) {
+        console.log(`John's BMI (${johnSmith.calcBMI()}) is higher than Mark's (${markMiller.calcBMI()})!`);
+    } else {
+        console.log(`Mark's BMI (${markMiller.calcBMI()}) is higher than  John's(${johnSmith.calcBMI()})!`);
+    }
+     // Lab 18.8.2
+    //Trần Đức Doanh
+    //nếu bill từ 50 - 300 thì total mới 15% em, ngược lại thì 20%
+    const calcTip = function(bill) {
+        return (bill >= 50 && bill <= 300) ? bill*1.15 : bill*1.2
+    }
+    let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86 , 52];
+    let totals = [];
+    // let tips = [];
+    // bills.forEach(element => {
+    //     let tip = (element >= 50 && element <= 300) ? element*0.15 : element*0.2;
+    //     tips.push(tip);
+    // });
+    bills.forEach(element => {
+        let total = calcTip(element);
+        console.log("total: ",total);
+        totals.push(total);
+    });
+
+
+</script>
+
+</body>
+</html>
