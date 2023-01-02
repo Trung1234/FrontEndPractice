@@ -1,10 +1,12 @@
 
 ```
 path: https://trung1234.github.io/DigitalCV/
-Assignment 03 
+Assignment 03 / DigitalCV
 ├─ css
+│  ├─ tablet.css
+│  ├─ laptop.css
 │  ├─ font.css
-│  └─ style.css
+│  └─ mobile.css
 ├─ fonts
 │  ├─ OpenSans-Italic-webfont.eot
 │  ├─ OpenSans-Italic-webfont.svg
